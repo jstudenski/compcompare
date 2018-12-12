@@ -30,3 +30,8 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: 'fredoka-one';
+  src: local('FredokaOne-Regular'), url(./fonts/FredokaOne-Regular.ttf) format('truetype');
+}

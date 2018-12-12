@@ -1,25 +1,26 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Screen from './components/screen'
+import Storage from './components/storage'
+import Processor from './components/processor'
 import './App.css';
 
 class App extends Component {
+
   render() {
+    const border = {
+      borderTop: '1px solid #d6d6d6',
+      width: 400,
+      margin: '20px 5px',
+    }
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <div style={border}></div>
+        <Screen aspectRatio={16/10} diagonal={15.4}></Screen>
+        <Screen diagonal={13.3}></Screen>
+        <Storage size={128}></Storage>
+        <div style={border}></div>
+        <Processor></Processor>
+        <div style={border}></div>
       </div>
     );
   }
