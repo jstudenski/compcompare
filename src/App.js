@@ -14,13 +14,13 @@ class App extends Component {
     }
     return (
       <div className="App">
-        <div style={border}></div>
+        <div style={border} />
         <Screen aspectRatio={16/10} diagonal={15.4}></Screen>
         <Screen diagonal={13.3}></Screen>
         <Storage size={128}></Storage>
-        <div style={border}></div>
+        <div style={border} />
         <Processor></Processor>
-        <div style={border}></div>
+        <div style={border} />
       </div>
     );
   }
