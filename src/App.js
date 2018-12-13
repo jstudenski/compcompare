@@ -13,7 +13,7 @@ class App extends Component {
       margin: '20px 5px',
     }
     return (
-      <div className="App">
+      <main>
         <div style={border} />
         <Screen aspectRatio={16/10} diagonal={15.4}></Screen>
         <Screen diagonal={13.3}></Screen>
@@ -21,7 +21,7 @@ class App extends Component {
         <div style={border} />
         <Processor></Processor>
         <div style={border} />
-      </div>
+      </main>
     );
   }
 }
