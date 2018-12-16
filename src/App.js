@@ -26,7 +26,7 @@ class App extends Component {
         <Storage size={128}/>
         <div style={border} />
         <Processor/>
-        <div style={border} />
+        <div style={ border } />
       </main>
     );
   }
