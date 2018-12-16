@@ -1,9 +1,14 @@
 main {
   text-align: center;
-  padding: 10px;
 }
 
 @font-face {
   font-family: 'fredoka-one';
   src: local('FredokaOne-Regular'), url(./fonts/FredokaOne-Regular.ttf) format('truetype');
+}
+
+section {
+  width: 98vw;
+  background-color: #f3f3f3;
+  margin: 1vw;
 }
