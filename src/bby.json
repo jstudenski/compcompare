@@ -1,0 +1,972 @@
+{
+"total": 25,
+"limit": 25,
+"skip": 0,
+"data": [
+{
+"id": 1581803,
+"name": "Apple - MacBook Air® (Latest Model) - 11.6\" Display - Intel Core i5 - 4GB Memory - 256GB Flash Storage - Silver",
+"type": "HardGood",
+"price": 1099.99,
+"upc": "888462342131",
+"shipping": 0,
+"description": "5th Gen Intel&#174; Core&#8482; i5 processor; 11.6\" display; 4GB memory; 256GB flash storageNote: DVD/CD drive not included",
+"manufacturer": "Apple",
+"model": "MJVP2LL/A",
+"url": "http://www.bestbuy.com/site/apple-macbook-air-latest-model-11-6-display-intel-core-i5-4gb-memory-256gb-flash-storage-silver/1581803.p?id=1219056204727&skuId=1581803&cmp=RMXCC",
+"image": "http://img.bbystatic.com/BestBuy_US/images/products/1581/1581803_sa.jpg",
+"createdAt": "2016-11-17T18:01:55.562Z",
+"updatedAt": "2016-11-17T18:01:55.562Z",
+"categories": [
+{
+"id": "pcmcat128500050004",
+"name": "Name Brands",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+},
+{
+"id": "pcmcat128500050005",
+"name": "Apple",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+},
+{
+"id": "pcmcat378600050017",
+"name": "Mac",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+}
+]
+},
+{
+"id": 3827189,
+"name": "Apple - MacBook Air® (Latest Model) - 11.6\" Display - Intel Core i5 - 4GB Memory - 128GB Flash Storage - Silver",
+"type": "HardGood",
+"price": 899.99,
+"upc": "888462341677",
+"shipping": 0,
+"description": "5th Gen Intel&#174; Core&#8482; i5 processor; 11.6\" display; 4GB memory; 128GB flash storageDVD/CD drive not included",
+"manufacturer": "Apple",
+"model": "MJVM2LL/A",
+"url": "http://www.bestbuy.com/site/apple-macbook-air-latest-model-11-6-display-intel-core-i5-4gb-memory-128gb-flash-storage-silver/3827189.p?id=1218434733477&skuId=3827189&cmp=RMXCC",
+"image": "http://img.bbystatic.com/BestBuy_US/images/products/3827/3827189_sa.jpg",
+"createdAt": "2016-11-17T17:58:46.655Z",
+"updatedAt": "2016-11-17T17:58:46.655Z",
+"categories": [
+{
+"id": "pcmcat128500050004",
+"name": "Name Brands",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+},
+{
+"id": "pcmcat128500050005",
+"name": "Apple",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+},
+{
+"id": "pcmcat378600050017",
+"name": "Mac",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+}
+]
+},
+{
+"id": 4357800,
+"name": "Apple - MacBook® Pro - 15.4\" Display - Intel Core i7 - 16GB Memory - 512GB Flash Storage - Silver",
+"type": "HardGood",
+"price": 2699.99,
+"upc": "888462703628",
+"shipping": 0,
+"description": "OS X YosemiteTechnical details: 2.8GHz Intel&#174; Core&#8482; i7 processor; 15.4\" display; 16GB memory; 512GB flash storageSpecial features: Bluetooth; backlit keyboard; HDMI output",
+"manufacturer": "Apple",
+"model": "Z0RG0LL/A",
+"url": "http://www.bestbuy.com/site/apple-macbook-pro-15-4-display-intel-core-i7-16gb-memory-512gb-flash-storage-silver/4357800.p?id=1219736050740&skuId=4357800&cmp=RMXCC",
+"image": "http://img.bbystatic.com/BestBuy_US/images/pac/products/1313/1313491974/1313491974_sa.jpg",
+"createdAt": "2016-11-17T17:59:24.820Z",
+"updatedAt": "2016-11-17T17:59:24.820Z",
+"categories": [
+{
+"id": "pcmcat128500050004",
+"name": "Name Brands",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+},
+{
+"id": "pcmcat128500050005",
+"name": "Apple",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+},
+{
+"id": "pcmcat378600050017",
+"name": "Mac",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+}
+]
+},
+{
+"id": 4357900,
+"name": "Apple - MacBook® Pro - 15.4\" Display - Intel Core i7 - 16GB Memory - 1TB Flash Storage - Silver",
+"type": "HardGood",
+"price": 3199.99,
+"upc": "888462703635",
+"shipping": 0,
+"description": "2GB dedicated graphicsOS X YosemiteTechnical details: 2.8GHz Intel&#174; Core&#8482; i7 processor; 15.4\" display; 16GB memory; 1TB flash storageSpecial features: Bluetooth; backlit keyboard; HDMI output",
+"manufacturer": "Apple",
+"model": "Z0RG1LL/A",
+"url": "http://www.bestbuy.com/site/apple-macbook-pro-15-4-display-intel-core-i7-16gb-memory-1tb-flash-storage-silver/4357900.p?id=1219736050738&skuId=4357900&cmp=RMXCC",
+"image": "http://img.bbystatic.com/BestBuy_US/images/pac/products/1313/1313491905/1313491905_sa.jpg",
+"createdAt": "2016-11-17T17:59:24.820Z",
+"updatedAt": "2016-11-17T17:59:24.820Z",
+"categories": [
+{
+"id": "pcmcat128500050004",
+"name": "Name Brands",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+},
+{
+"id": "pcmcat128500050005",
+"name": "Apple",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+},
+{
+"id": "pcmcat378600050017",
+"name": "Mac",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+}
+]
+},
+{
+"id": 4707000,
+"name": "Apple - MacBook Pro with Retina display (Latest Model) - 13.3\" Display - 8GB Memory - 512GB Flash Storage - Silver",
+"type": "HardGood",
+"price": 1999.99,
+"upc": "888462805254",
+"shipping": 0,
+"description": "MacBook Pro with Retina display - 13.3\" Display - 8GB Memory - 512GB Flash Storage",
+"manufacturer": "Apple",
+"model": "Z0QP3LL/A",
+"url": "http://www.bestbuy.com/site/apple-macbook-pro-with-retina-display-latest-model-13-3-display-8gb-memory-512gb-flash-storage-silver/4707000.p?id=1219806243681&skuId=4707000&cmp=RMXCC",
+"image": "http://img.bbystatic.com/BestBuy_US/images/pac/products/1313/1313938035/1313938035_sa.jpg",
+"createdAt": "2016-11-17T17:59:24.820Z",
+"updatedAt": "2016-11-17T17:59:24.820Z",
+"categories": [
+{
+"id": "abcat0500000",
+"name": "Computers & Tablets",
+"createdAt": "2016-11-17T17:57:04.285Z",
+"updatedAt": "2016-11-17T17:57:04.285Z"
+},
+{
+"id": "abcat0502000",
+"name": "Laptops",
+"createdAt": "2016-11-17T17:57:04.285Z",
+"updatedAt": "2016-11-17T17:57:04.285Z"
+},
+{
+"id": "pcmcat138500050001",
+"name": "All Laptops",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+},
+{
+"id": "pcmcat247400050001",
+"name": "MacBooks",
+"createdAt": "2016-11-17T17:57:05.399Z",
+"updatedAt": "2016-11-17T17:57:05.399Z"
+}
+]
+},
+{
+"id": 4707100,
+"name": "Apple - MacBook Pro with Retina display (Latest Model) - 13.3\" Display - 16GB Memory - 1TB Flash Storage - Silver",
+"type": "HardGood",
+"price": 2699.99,
+"upc": "888462604260",
+"shipping": 0,
+"description": "MacBook Pro with Retina display - 13.3\" Display - 16GB Memory - 1TB Flash Storage",
+"manufacturer": "Apple",
+"model": "Z0QP2LL/A",
+"url": "http://www.bestbuy.com/site/apple-macbook-pro-with-retina-display-latest-model-13-3-display-16gb-memory-1tb-flash-storage-silver/4707100.p?id=1219806243213&skuId=4707100&cmp=RMXCC",
+"image": "http://img.bbystatic.com/BestBuy_US/images/products/4707/4707100_sa.jpg",
+"createdAt": "2016-11-17T17:59:24.820Z",
+"updatedAt": "2016-11-17T17:59:24.820Z",
+"categories": [
+{
+"id": "abcat0500000",
+"name": "Computers & Tablets",
+"createdAt": "2016-11-17T17:57:04.285Z",
+"updatedAt": "2016-11-17T17:57:04.285Z"
+},
+{
+"id": "abcat0502000",
+"name": "Laptops",
+"createdAt": "2016-11-17T17:57:04.285Z",
+"updatedAt": "2016-11-17T17:57:04.285Z"
+},
+{
+"id": "pcmcat138500050001",
+"name": "All Laptops",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+},
+{
+"id": "pcmcat247400050001",
+"name": "MacBooks",
+"createdAt": "2016-11-17T17:57:05.399Z",
+"updatedAt": "2016-11-17T17:57:05.399Z"
+}
+]
+},
+{
+"id": 5229400,
+"name": "Apple - Macbook® (Latest Model) - 12\" Display - Intel Core M3 - 8GB Memory - 256GB Flash Storage - Space Gray",
+"type": "HardGood",
+"price": 1299.99,
+"upc": "888462687645",
+"shipping": 0,
+"description": "Intel&#174; Core&#8482; M3 processor; 12\" display; 8GB memory; 256GB flash storageNote: DVD/CD drive not included",
+"manufacturer": "Apple",
+"model": "MLH72LL/A",
+"url": "http://www.bestbuy.com/site/apple-macbook-latest-model-12-display-intel-core-m3-8gb-memory-256gb-flash-storage-space-gray/5229400.p?id=bb5229400&skuId=5229400&cmp=RMXCC",
+"image": "http://img.bbystatic.com/BestBuy_US/images/products/5229/5229400_sa.jpg",
+"createdAt": "2016-11-17T18:01:44.806Z",
+"updatedAt": "2016-11-17T18:01:44.806Z",
+"categories": [
+{
+"id": "abcat0500000",
+"name": "Computers & Tablets",
+"createdAt": "2016-11-17T17:57:04.285Z",
+"updatedAt": "2016-11-17T17:57:04.285Z"
+},
+{
+"id": "abcat0502000",
+"name": "Laptops",
+"createdAt": "2016-11-17T17:57:04.285Z",
+"updatedAt": "2016-11-17T17:57:04.285Z"
+},
+{
+"id": "pcmcat138500050001",
+"name": "All Laptops",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+},
+{
+"id": "pcmcat247400050001",
+"name": "MacBooks",
+"createdAt": "2016-11-17T17:57:05.399Z",
+"updatedAt": "2016-11-17T17:57:05.399Z"
+}
+]
+},
+{
+"id": 5229600,
+"name": "Apple - Macbook® (Latest Model) -  12\" Display - Intel Core M5 - 8GB Memory - 512GB Flash Storage - Space Gray",
+"type": "HardGood",
+"price": 1599.99,
+"upc": "888462687652",
+"shipping": 0,
+"description": "Intel&#174; Core&#8482; M5 processor; 12\" display; 8GB memory; 512GB flash storageNote: DVD/CD drive not included",
+"manufacturer": "Apple",
+"model": "MLH82LL/A",
+"url": "http://www.bestbuy.com/site/apple-macbook-latest-model-12-display-intel-core-m5-8gb-memory-512gb-flash-storage-space-gray/5229600.p?id=bb5229600&skuId=5229600&cmp=RMXCC",
+"image": "http://img.bbystatic.com/BestBuy_US/images/products/5229/5229600_sa.jpg",
+"createdAt": "2016-11-17T18:01:44.806Z",
+"updatedAt": "2016-11-17T18:01:44.806Z",
+"categories": [
+{
+"id": "abcat0500000",
+"name": "Computers & Tablets",
+"createdAt": "2016-11-17T17:57:04.285Z",
+"updatedAt": "2016-11-17T17:57:04.285Z"
+},
+{
+"id": "abcat0502000",
+"name": "Laptops",
+"createdAt": "2016-11-17T17:57:04.285Z",
+"updatedAt": "2016-11-17T17:57:04.285Z"
+},
+{
+"id": "pcmcat138500050001",
+"name": "All Laptops",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+},
+{
+"id": "pcmcat247400050001",
+"name": "MacBooks",
+"createdAt": "2016-11-17T17:57:05.399Z",
+"updatedAt": "2016-11-17T17:57:05.399Z"
+}
+]
+},
+{
+"id": 5229700,
+"name": "Apple - Macbook®  (Latest Model) - 12\" Display - Intel Core M3 - 8GB Memory - 256GB Flash Storage - Silver",
+"type": "HardGood",
+"price": 1299.99,
+"upc": "888462687676",
+"shipping": 0,
+"description": "Intel&#174; Core&#8482; M3 processor; 12\" display; 8GB memory; 256GB flash storageNote: DVD/CD drive not included",
+"manufacturer": "Apple",
+"model": "MLHA2LL/A",
+"url": "http://www.bestbuy.com/site/apple-macbook-latest-model-12-display-intel-core-m3-8gb-memory-256gb-flash-storage-silver/5229700.p?id=bb5229700&skuId=5229700&cmp=RMXCC",
+"image": "http://img.bbystatic.com/BestBuy_US/images/products/5229/5229700_sa.jpg",
+"createdAt": "2016-11-17T18:01:44.806Z",
+"updatedAt": "2016-11-17T18:01:44.806Z",
+"categories": [
+{
+"id": "abcat0500000",
+"name": "Computers & Tablets",
+"createdAt": "2016-11-17T17:57:04.285Z",
+"updatedAt": "2016-11-17T17:57:04.285Z"
+},
+{
+"id": "abcat0502000",
+"name": "Laptops",
+"createdAt": "2016-11-17T17:57:04.285Z",
+"updatedAt": "2016-11-17T17:57:04.285Z"
+},
+{
+"id": "pcmcat138500050001",
+"name": "All Laptops",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+},
+{
+"id": "pcmcat247400050001",
+"name": "MacBooks",
+"createdAt": "2016-11-17T17:57:05.399Z",
+"updatedAt": "2016-11-17T17:57:05.399Z"
+}
+]
+},
+{
+"id": 5229800,
+"name": "Apple - Macbook® (Latest Model) - 12\" Display - Intel Core M5 - 8GB Memory - 512GB Flash Storage - Silver",
+"type": "HardGood",
+"price": 1599.99,
+"upc": "888462687683",
+"shipping": 0,
+"description": "Intel&#174; Core&#8482; M5 processor; 12\" display; 8GB memory; 512GB flash storageNote: DVD/CD drive not included",
+"manufacturer": "Apple",
+"model": "MLHC2LL/A",
+"url": "http://www.bestbuy.com/site/apple-macbook-latest-model-12-display-intel-core-m5-8gb-memory-512gb-flash-storage-silver/5229800.p?id=bb5229800&skuId=5229800&cmp=RMXCC",
+"image": "http://img.bbystatic.com/BestBuy_US/images/products/5229/5229800_sa.jpg",
+"createdAt": "2016-11-17T18:01:44.806Z",
+"updatedAt": "2016-11-17T18:01:44.806Z",
+"categories": [
+{
+"id": "abcat0500000",
+"name": "Computers & Tablets",
+"createdAt": "2016-11-17T17:57:04.285Z",
+"updatedAt": "2016-11-17T17:57:04.285Z"
+},
+{
+"id": "abcat0502000",
+"name": "Laptops",
+"createdAt": "2016-11-17T17:57:04.285Z",
+"updatedAt": "2016-11-17T17:57:04.285Z"
+},
+{
+"id": "pcmcat138500050001",
+"name": "All Laptops",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+},
+{
+"id": "pcmcat247400050001",
+"name": "MacBooks",
+"createdAt": "2016-11-17T17:57:05.399Z",
+"updatedAt": "2016-11-17T17:57:05.399Z"
+}
+]
+},
+{
+"id": 5229901,
+"name": "Apple - Macbook® (Latest Model) - 12\" Display - Intel Core M5 - 8GB Memory - 512GB Flash Storage - Gold",
+"type": "HardGood",
+"price": 1599.99,
+"upc": "888462687713",
+"shipping": 0,
+"description": "Intel&#174; Core&#8482; M5 processor; 12\" display; 8GB memory; 512GB flash storageNote: DVD/CD drive not included",
+"manufacturer": "Apple",
+"model": "MLHF2LL/A",
+"url": "http://www.bestbuy.com/site/apple-macbook-latest-model-12-display-intel-core-m5-8gb-memory-512gb-flash-storage-gold/5229901.p?id=bb5229901&skuId=5229901&cmp=RMXCC",
+"image": "http://img.bbystatic.com/BestBuy_US/images/products/5229/5229901_sa.jpg",
+"createdAt": "2016-11-17T18:01:44.806Z",
+"updatedAt": "2016-11-17T18:01:44.806Z",
+"categories": [
+{
+"id": "abcat0500000",
+"name": "Computers & Tablets",
+"createdAt": "2016-11-17T17:57:04.285Z",
+"updatedAt": "2016-11-17T17:57:04.285Z"
+},
+{
+"id": "abcat0502000",
+"name": "Laptops",
+"createdAt": "2016-11-17T17:57:04.285Z",
+"updatedAt": "2016-11-17T17:57:04.285Z"
+},
+{
+"id": "pcmcat138500050001",
+"name": "All Laptops",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+},
+{
+"id": "pcmcat247400050001",
+"name": "MacBooks",
+"createdAt": "2016-11-17T17:57:05.399Z",
+"updatedAt": "2016-11-17T17:57:05.399Z"
+}
+]
+},
+{
+"id": 5230000,
+"name": "Apple - Macbook® (Latest Model) - 12\" Display - Intel Core M5 - 8GB Memory - 512GB Flash Storage - Rose Gold",
+"type": "HardGood",
+"price": 1599.99,
+"upc": "888462868648",
+"shipping": 0,
+"description": "Intel&#174; Core&#8482; M5 processor; 12\" display; 8GB memory; 512GB flash storageNote: DVD/CD drive not included",
+"manufacturer": "Apple",
+"model": "MMGM2LL/A",
+"url": "http://www.bestbuy.com/site/apple-macbook-latest-model-12-display-intel-core-m5-8gb-memory-512gb-flash-storage-rose-gold/5230000.p?id=bb5230000&skuId=5230000&cmp=RMXCC",
+"image": "http://img.bbystatic.com/BestBuy_US/images/products/5230/5230000_sa.jpg",
+"createdAt": "2016-11-17T18:01:44.806Z",
+"updatedAt": "2016-11-17T18:01:44.806Z",
+"categories": [
+{
+"id": "abcat0500000",
+"name": "Computers & Tablets",
+"createdAt": "2016-11-17T17:57:04.285Z",
+"updatedAt": "2016-11-17T17:57:04.285Z"
+},
+{
+"id": "abcat0502000",
+"name": "Laptops",
+"createdAt": "2016-11-17T17:57:04.285Z",
+"updatedAt": "2016-11-17T17:57:04.285Z"
+},
+{
+"id": "pcmcat138500050001",
+"name": "All Laptops",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+},
+{
+"id": "pcmcat247400050001",
+"name": "MacBooks",
+"createdAt": "2016-11-17T17:57:05.399Z",
+"updatedAt": "2016-11-17T17:57:05.399Z"
+}
+]
+},
+{
+"id": 5238017,
+"name": "Apple - MacBook® - 12\" Display - Intel Core M - 8GB Memory - 512GB Flash Storage - Gold",
+"type": "HardGood",
+"price": 1599.99,
+"upc": "888462324229",
+"shipping": 0,
+"description": "Intel&#174; Core&#8482; M processor; 12\" display; 8GB memory; 512GB flash storageDVD/CD drive not included",
+"manufacturer": "Apple",
+"model": "MK4N2LL/A",
+"url": "http://www.bestbuy.com/site/apple-macbook-12-display-intel-core-m-8gb-memory-512gb-flash-storage-gold/5238017.p?id=1219649750709&skuId=5238017&cmp=RMXCC",
+"image": "http://img.bbystatic.com/BestBuy_US/images/products/5238/5238017_sa.jpg",
+"createdAt": "2016-11-17T18:01:44.806Z",
+"updatedAt": "2016-11-17T18:01:44.806Z",
+"categories": [
+{
+"id": "abcat0500000",
+"name": "Computers & Tablets",
+"createdAt": "2016-11-17T17:57:04.285Z",
+"updatedAt": "2016-11-17T17:57:04.285Z"
+},
+{
+"id": "abcat0502000",
+"name": "Laptops",
+"createdAt": "2016-11-17T17:57:04.285Z",
+"updatedAt": "2016-11-17T17:57:04.285Z"
+},
+{
+"id": "pcmcat138500050001",
+"name": "All Laptops",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+},
+{
+"id": "pcmcat247400050001",
+"name": "MacBooks",
+"createdAt": "2016-11-17T17:57:05.399Z",
+"updatedAt": "2016-11-17T17:57:05.399Z"
+}
+]
+},
+{
+"id": 5242037,
+"name": "Apple - MacBook® - 12\" Display - Intel Core M - 8GB Memory - 512GB Flash Storage - Silver",
+"type": "HardGood",
+"price": 1599.99,
+"upc": "885909924691",
+"shipping": 0,
+"description": "Intel&#174; Core&#8482; M processor; 12\" display; 8GB memory; 512GB flash storageDVD/CD drive not included",
+"manufacturer": "Apple",
+"model": "MF865LL/A",
+"url": "http://www.bestbuy.com/site/apple-macbook-12-display-intel-core-m-8gb-memory-512gb-flash-storage-silver/5242037.p?id=1219649748655&skuId=5242037&cmp=RMXCC",
+"image": "http://img.bbystatic.com/BestBuy_US/images/pac/products/1313/1313481661/1313481661_sa.jpg",
+"createdAt": "2016-11-17T18:01:55.562Z",
+"updatedAt": "2016-11-17T18:01:55.562Z",
+"categories": [
+{
+"id": "abcat0500000",
+"name": "Computers & Tablets",
+"createdAt": "2016-11-17T17:57:04.285Z",
+"updatedAt": "2016-11-17T17:57:04.285Z"
+},
+{
+"id": "abcat0502000",
+"name": "Laptops",
+"createdAt": "2016-11-17T17:57:04.285Z",
+"updatedAt": "2016-11-17T17:57:04.285Z"
+},
+{
+"id": "pcmcat138500050001",
+"name": "All Laptops",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+},
+{
+"id": "pcmcat247400050001",
+"name": "MacBooks",
+"createdAt": "2016-11-17T17:57:05.399Z",
+"updatedAt": "2016-11-17T17:57:05.399Z"
+}
+]
+},
+{
+"id": 5243036,
+"name": "Apple - MacBook® - 12\" Display - Intel Core M - 8GB Memory - 512GB Flash Storage - Space Gray",
+"type": "HardGood",
+"price": 1599.99,
+"upc": "888462181686",
+"shipping": 0,
+"description": "Intel&#174; Core&#8482; M processor; 12\" display; 8GB memory; 512GB flash storageDVD/CD drive not included",
+"manufacturer": "Apple",
+"model": "MJY42LL/A",
+"url": "http://www.bestbuy.com/site/apple-macbook-12-display-intel-core-m-8gb-memory-512gb-flash-storage-space-gray/5243036.p?id=1219649749661&skuId=5243036&cmp=RMXCC",
+"image": "http://img.bbystatic.com/BestBuy_US/images/products/5243/5243036_sa.jpg",
+"createdAt": "2016-11-17T18:01:55.562Z",
+"updatedAt": "2016-11-17T18:01:55.562Z",
+"categories": [
+{
+"id": "abcat0500000",
+"name": "Computers & Tablets",
+"createdAt": "2016-11-17T17:57:04.285Z",
+"updatedAt": "2016-11-17T17:57:04.285Z"
+},
+{
+"id": "abcat0502000",
+"name": "Laptops",
+"createdAt": "2016-11-17T17:57:04.285Z",
+"updatedAt": "2016-11-17T17:57:04.285Z"
+},
+{
+"id": "pcmcat138500050001",
+"name": "All Laptops",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+},
+{
+"id": "pcmcat247400050001",
+"name": "MacBooks",
+"createdAt": "2016-11-17T17:57:05.399Z",
+"updatedAt": "2016-11-17T17:57:05.399Z"
+}
+]
+},
+{
+"id": 5430505,
+"name": "Apple - MacBook® Pro - Intel Core i5 - 13.3\" Display - 4GB Memory - 500GB Hard Drive - Silver",
+"type": "HardGood",
+"price": 1099.99,
+"upc": "885909582969",
+"shipping": 0,
+"description": "Technical details: Intel&#174; Core&#8482; i5 processor; 13.3\" display; 4GB memory; 500GB hard driveSpecial features: Bluetooth",
+"manufacturer": "Apple",
+"model": "MD101LL/A",
+"url": "http://www.bestbuy.com/site/apple-macbook-pro-intel-core-i5-13-3-display-4gb-memory-500gb-hard-drive-silver/5430505.p?id=1218646127726&skuId=5430505&cmp=RMXCC",
+"image": "http://img.bbystatic.com/BestBuy_US/images/pac/products/1304/1304516570/1304516570_sa.jpg",
+"createdAt": "2016-11-17T18:01:55.562Z",
+"updatedAt": "2016-11-17T18:01:55.562Z",
+"categories": [
+{
+"id": "pcmcat128500050004",
+"name": "Name Brands",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+},
+{
+"id": "pcmcat128500050005",
+"name": "Apple",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+},
+{
+"id": "pcmcat378600050017",
+"name": "Mac",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+}
+]
+},
+{
+"id": 6443034,
+"name": "Apple - MacBook Air® (Latest Model) - 13.3\" Display - Intel Core i5 - 8GB Memory - 128GB Flash Storage - Silver",
+"type": "HardGood",
+"price": 999.99,
+"upc": "888462866019",
+"shipping": 0,
+"description": "5th Gen Intel&#174; Core&#8482; i5 processor; 13.3\" display; 8GB memory; 128GB flash storageNote: DVD/CD drive not included",
+"manufacturer": "Apple",
+"model": "MMGF2LL/A",
+"url": "http://www.bestbuy.com/site/apple-macbook-air-latest-model-13-3-display-intel-core-i5-8gb-memory-128gb-flash-storage-silver/6443034.p?id=1219661416264&skuId=6443034&cmp=RMXCC",
+"image": "http://img.bbystatic.com/BestBuy_US/images/pac/products/1313/1313736693/1313736693_sa.jpg",
+"createdAt": "2016-11-17T18:00:31.886Z",
+"updatedAt": "2016-11-17T18:00:31.886Z",
+"categories": [
+{
+"id": "abcat0500000",
+"name": "Computers & Tablets",
+"createdAt": "2016-11-17T17:57:04.285Z",
+"updatedAt": "2016-11-17T17:57:04.285Z"
+},
+{
+"id": "abcat0502000",
+"name": "Laptops",
+"createdAt": "2016-11-17T17:57:04.285Z",
+"updatedAt": "2016-11-17T17:57:04.285Z"
+},
+{
+"id": "pcmcat138500050001",
+"name": "All Laptops",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+},
+{
+"id": "pcmcat247400050001",
+"name": "MacBooks",
+"createdAt": "2016-11-17T17:57:05.399Z",
+"updatedAt": "2016-11-17T17:57:05.399Z"
+}
+]
+},
+{
+"id": 6444006,
+"name": "Apple - MacBook Air® (Latest Model) - 13.3\" Display - Intel Core i5 - 8GB Memory - 256GB Flash Storage - Silver",
+"type": "HardGood",
+"price": 1199.99,
+"upc": "888462866446",
+"shipping": 0,
+"description": "5th Gen Intel&#174; Core&#8482; i5 processor; 13.3\" display; 8GB memory; 256GB flash storageNote: DVD/CD drive not included",
+"manufacturer": "Apple",
+"model": "MMGG2LL/A",
+"url": "http://www.bestbuy.com/site/apple-macbook-air-latest-model-13-3-display-intel-core-i5-8gb-memory-256gb-flash-storage-silver/6444006.p?id=1219661412849&skuId=6444006&cmp=RMXCC",
+"image": "http://img.bbystatic.com/BestBuy_US/images/products/6444/6444006_sa.jpg",
+"createdAt": "2016-11-17T18:00:31.886Z",
+"updatedAt": "2016-11-17T18:00:31.886Z",
+"categories": [
+{
+"id": "abcat0500000",
+"name": "Computers & Tablets",
+"createdAt": "2016-11-17T17:57:04.285Z",
+"updatedAt": "2016-11-17T17:57:04.285Z"
+},
+{
+"id": "abcat0502000",
+"name": "Laptops",
+"createdAt": "2016-11-17T17:57:04.285Z",
+"updatedAt": "2016-11-17T17:57:04.285Z"
+},
+{
+"id": "pcmcat138500050001",
+"name": "All Laptops",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+},
+{
+"id": "pcmcat247400050001",
+"name": "MacBooks",
+"createdAt": "2016-11-17T17:57:05.399Z",
+"updatedAt": "2016-11-17T17:57:05.399Z"
+}
+]
+},
+{
+"id": 6445156,
+"name": "Apple - Macbook® (Latest Model) - 12\" Display - Intel Core M3 - 8GB Memory - 256GB Flash Storage - Gold",
+"type": "HardGood",
+"price": 1299.99,
+"upc": "888462687706",
+"shipping": 0,
+"description": "Intel&#174; Core&#8482; M3 processor; 12\" display; 8GB memory; 256GB flash storageNote: DVD/CD drive not included",
+"manufacturer": "Apple",
+"model": "MLHE2LL/A",
+"url": "http://www.bestbuy.com/site/apple-macbook-latest-model-12-display-intel-core-m3-8gb-memory-256gb-flash-storage-gold/6445156.p?id=1219661415514&skuId=6445156&cmp=RMXCC",
+"image": "http://img.bbystatic.com/BestBuy_US/images/products/6445/6445156_sa.jpg",
+"createdAt": "2016-11-17T18:00:31.886Z",
+"updatedAt": "2016-11-17T18:00:31.886Z",
+"categories": [
+{
+"id": "abcat0500000",
+"name": "Computers & Tablets",
+"createdAt": "2016-11-17T17:57:04.285Z",
+"updatedAt": "2016-11-17T17:57:04.285Z"
+},
+{
+"id": "abcat0502000",
+"name": "Laptops",
+"createdAt": "2016-11-17T17:57:04.285Z",
+"updatedAt": "2016-11-17T17:57:04.285Z"
+},
+{
+"id": "pcmcat138500050001",
+"name": "All Laptops",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+},
+{
+"id": "pcmcat247400050001",
+"name": "MacBooks",
+"createdAt": "2016-11-17T17:57:05.399Z",
+"updatedAt": "2016-11-17T17:57:05.399Z"
+}
+]
+},
+{
+"id": 6446013,
+"name": "Apple - Macbook® (Latest Model) - 12\" Display - Intel Core M3 - 8GB Memory - 256GB Flash Storage - Rose Gold",
+"type": "HardGood",
+"price": 1299.99,
+"upc": "888462868198",
+"shipping": 0,
+"description": "Intel&#174; Core&#8482; M3 processor; 12\" display; 8GB memory; 256GB flash storageNote: DVD/CD drive not included",
+"manufacturer": "Apple",
+"model": "MMGL2LL/A",
+"url": "http://www.bestbuy.com/site/apple-macbook-latest-model-12-display-intel-core-m3-8gb-memory-256gb-flash-storage-rose-gold/6446013.p?id=1219661414932&skuId=6446013&cmp=RMXCC",
+"image": "http://img.bbystatic.com/BestBuy_US/images/products/6446/6446013_sa.jpg",
+"createdAt": "2016-11-17T18:00:31.886Z",
+"updatedAt": "2016-11-17T18:00:31.886Z",
+"categories": [
+{
+"id": "abcat0500000",
+"name": "Computers & Tablets",
+"createdAt": "2016-11-17T17:57:04.285Z",
+"updatedAt": "2016-11-17T17:57:04.285Z"
+},
+{
+"id": "abcat0502000",
+"name": "Laptops",
+"createdAt": "2016-11-17T17:57:04.285Z",
+"updatedAt": "2016-11-17T17:57:04.285Z"
+},
+{
+"id": "pcmcat138500050001",
+"name": "All Laptops",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+},
+{
+"id": "pcmcat247400050001",
+"name": "MacBooks",
+"createdAt": "2016-11-17T17:57:05.399Z",
+"updatedAt": "2016-11-17T17:57:05.399Z"
+}
+]
+},
+{
+"id": 8532029,
+"name": "Apple - MacBook Pro with Retina display (Latest Model) - 13.3\" Display - 8GB Memory - 256GB Flash Storage - Silver",
+"type": "HardGood",
+"price": 1499.99,
+"upc": "885909918188",
+"shipping": 0,
+"description": "MacBook Pro with Retina display - 13.3\" Display - 8GB Memory - 256GB Flash Storage",
+"manufacturer": "Apple",
+"model": "MF840LL/A",
+"url": "http://www.bestbuy.com/site/apple-macbook-pro-with-retina-display-latest-model-13-3-display-8gb-memory-256gb-flash-storage-silver/8532029.p?id=1219343157396&skuId=8532029&cmp=RMXCC",
+"image": "http://img.bbystatic.com/BestBuy_US/images/pac/products/1312/1312360202/1312360202_sa.jpg",
+"createdAt": "2016-11-17T18:00:01.751Z",
+"updatedAt": "2016-11-17T18:00:01.751Z",
+"categories": [
+{
+"id": "pcmcat128500050004",
+"name": "Name Brands",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+},
+{
+"id": "pcmcat128500050005",
+"name": "Apple",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+},
+{
+"id": "pcmcat378600050017",
+"name": "Mac",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+}
+]
+},
+{
+"id": 8532495,
+"name": "Apple - MacBook Pro with Retina display (Latest Model) - 13.3\" Display - 8GB Memory - 512GB Flash Storage - Silver",
+"type": "HardGood",
+"price": 1799.99,
+"upc": "885909918195",
+"shipping": 0,
+"description": "MacBook Pro with Retina display - 13.3\" Display - 8GB Memory - 512GB Flash Storage",
+"manufacturer": "Apple",
+"model": "MF841LL/A",
+"url": "http://www.bestbuy.com/site/apple-macbook-pro-with-retina-display-latest-model-13-3-display-8gb-memory-512gb-flash-storage-silver/8532495.p?id=1219343246942&skuId=8532495&cmp=RMXCC",
+"image": "http://img.bbystatic.com/BestBuy_US/images/products/8532/8532495_sa.jpg",
+"createdAt": "2016-11-17T18:00:01.751Z",
+"updatedAt": "2016-11-17T18:00:01.751Z",
+"categories": [
+{
+"id": "pcmcat128500050004",
+"name": "Name Brands",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+},
+{
+"id": "pcmcat128500050005",
+"name": "Apple",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+},
+{
+"id": "pcmcat378600050017",
+"name": "Mac",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+}
+]
+},
+{
+"id": 8532502,
+"name": "Apple - MacBook® Pro - 15.4\" Display - Intel Core i7 - 16GB Memory - 256GB Flash Storage - Silver",
+"type": "HardGood",
+"price": 1999.99,
+"upc": "888462101103",
+"shipping": 0,
+"description": "OS X YosemiteTechnical details: Intel&#174; Core&#8482; i7 processor; 15.4\" display; 16GB memory; 256GB flash storageSpecial features: Bluetooth; backlit keyboard; HDMI output",
+"manufacturer": "Apple",
+"model": "MJLQ2LL/A",
+"url": "http://www.bestbuy.com/site/apple-macbook-pro-15-4-display-intel-core-i7-16gb-memory-256gb-flash-storage-silver/8532502.p?id=1219343246944&skuId=8532502&cmp=RMXCC",
+"image": "http://img.bbystatic.com/BestBuy_US/images/products/8532/8532502_sa.jpg",
+"createdAt": "2016-11-17T18:00:01.751Z",
+"updatedAt": "2016-11-17T18:00:01.751Z",
+"categories": [
+{
+"id": "pcmcat128500050004",
+"name": "Name Brands",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+},
+{
+"id": "pcmcat128500050005",
+"name": "Apple",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+},
+{
+"id": "pcmcat378600050017",
+"name": "Mac",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+}
+]
+},
+{
+"id": 8532548,
+"name": "Apple - MacBook® Pro - 15.4\" Display - Intel Core i7 - 16GB Memory - 512GB Flash Storage - Silver",
+"type": "HardGood",
+"price": 2499.99,
+"upc": "888462101110",
+"shipping": 0,
+"description": "2GB dedicated graphicsOS X YosemiteTechnical details: Intel&#174; Core&#8482; i7 processor; 15.4\" display; 16GB memory; 512GB flash storageSpecial features: Bluetooth; backlit keyboard; HDMI output",
+"manufacturer": "Apple",
+"model": "MJLT2LL/A",
+"url": "http://www.bestbuy.com/site/apple-macbook-pro-15-4-display-intel-core-i7-16gb-memory-512gb-flash-storage-silver/8532548.p?id=1219343246943&skuId=8532548&cmp=RMXCC",
+"image": "http://img.bbystatic.com/BestBuy_US/images/products/8532/8532548_sa.jpg",
+"createdAt": "2016-11-17T18:00:01.751Z",
+"updatedAt": "2016-11-17T18:00:01.751Z",
+"categories": [
+{
+"id": "pcmcat128500050004",
+"name": "Name Brands",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+},
+{
+"id": "pcmcat128500050005",
+"name": "Apple",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+},
+{
+"id": "pcmcat378600050017",
+"name": "Mac",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+}
+]
+},
+{
+"id": 8532557,
+"name": "Apple - MacBook Pro with Retina display (Latest Model) - 13.3\" Display - 8GB Memory - 128GB Flash Storage - Silver",
+"type": "HardGood",
+"price": 1299.99,
+"upc": "885909918164",
+"shipping": 0,
+"description": "MacBook Pro with Retina display - 13.3\" Display - 8GB Memory - 128GB Flash Storage",
+"manufacturer": "Apple",
+"model": "MF839LL/A",
+"url": "http://www.bestbuy.com/site/apple-macbook-pro-with-retina-display-latest-model-13-3-display-8gb-memory-128gb-flash-storage-silver/8532557.p?id=1219343246941&skuId=8532557&cmp=RMXCC",
+"image": "http://img.bbystatic.com/BestBuy_US/images/products/8532/8532557_sa.jpg",
+"createdAt": "2016-11-17T18:00:01.751Z",
+"updatedAt": "2016-11-17T18:00:01.751Z",
+"categories": [
+{
+"id": "pcmcat128500050004",
+"name": "Name Brands",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+},
+{
+"id": "pcmcat128500050005",
+"name": "Apple",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+},
+{
+"id": "pcmcat378600050017",
+"name": "Mac",
+"createdAt": "2016-11-17T17:57:04.643Z",
+"updatedAt": "2016-11-17T17:57:04.643Z"
+}
+]
+}
+]
+}
