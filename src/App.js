@@ -8,7 +8,7 @@ import './App.css';
 class App extends Component {
   constructor ( props ) {
     super(props);
-    this.state = {computers: {}};
+    this.state = {computers: []}
   }
   componentDidMount = async () => {
     const snapshot = await firestore.collection('data').get();
@@ -22,11 +22,16 @@ class App extends Component {
       borderTop: '1px solid #d6d6d6',
       width: 400,
     }
-    // console.log(this.state.computers)
+    console.log(computers)
     return (
       <main>
         <section>
-          Hello
+          { computers.map(comp =>
+            <tr>
+              <td>{ comp.name }</td>
+              <td>{ comp.model }</td>
+            </tr>
+          )}
         </section>
         <section>
           <div style={border} />
