@@ -22,15 +22,19 @@ class App extends Component {
       borderTop: '1px solid #d6d6d6',
       width: 400,
     }
+    const cell = {
+      borderBottom: '1px solid hsl(202,10%,88%)',
+      borderLeft: '1px solid hsl(202,10%,88%)',
+    }
     console.log(computers)
     return (
       <main>
         <section>
           { computers.map(comp =>
-            <tr>
-              <td>{ comp.name }</td>
-              <td>{ comp.model }</td>
-            </tr>
+            <div>
+              <div style={cell}>{ comp.name }</div>
+              <div style={cell}>{ comp.model }</div>
+            </div>
           )}
         </section>
         <section>
