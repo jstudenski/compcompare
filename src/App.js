@@ -26,10 +26,15 @@ class App extends Component {
       borderBottom: '1px solid hsl(202,10%,88%)',
       borderLeft: '1px solid hsl(202,10%,88%)',
     }
+    const section = {
+      borderTop: '1px solid hsl(202,10%,88%)',
+      borderRight: '1px solid hsl(202,10%,88%)',
+    }
+
     console.log(computers)
     return (
       <main>
-        <section>
+        <section style={section}>
           { computers.map(comp =>
             <div>
               <div style={cell}>{ comp.name }</div>
