@@ -85,27 +85,11 @@ class App extends Component {
                   <div style={{flexBasis: flex}}>
                     <input name="storage" type="text" value={current} onChange={this.handleChange} />
                   </div>
-                )// <div style={{flexBasis: flex}}>{ current }</div>
+                )
               })}
             </div>
           </div>
         </section>
-        {/* <section style={section}>
-          <div style={grid}>
-          <div style={row}>
-                <div style={cell}>name</div>
-                <div style={cell}>model</div>
-                <div style={cell}>storage</div>
-              </div>
-            { computers.map(comp =>
-              <div style={row}>
-                <div style={cell}>{ comp.name }</div>
-                <div style={cell}>{ comp.model }</div>
-                <div style={cell}>{ comp.storage }</div>
-              </div>
-            )}
-          </div>
-        </section> */}
         <section>
           <div style={border} />
           <Screen aspectRatio={16/10} diagonal={15.4}/>
