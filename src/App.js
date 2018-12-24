@@ -10,11 +10,22 @@ class App extends Component {
     super(props);
     this.state = {computers: []}
   }
+
+  // get userRef() {
+  //   return firestore.doc(`users/${this.uid}`);
+  // }
+
   componentDidMount = async () => {
     const snapshot = await firestore.collection('data').get();
     const computers = snapshot.docs.map(computer => ({ id: computer.id, ...computer.data() }));
+    console.log(computers)
     this.setState({ computers });
   }
+
+  handleChange = event => {
+    const { name, value } = event.target;
+    this.setState({ [name]: value });
+  };
 
   render() {
     const { computers } = this.state
@@ -39,22 +50,62 @@ class App extends Component {
       overflow: 'hidden',
     }
     const row = {
-      border: '1px solid pink',
+      // border: '1px solid pink',
     }
 
-    console.log(computers)
     return (
       <main>
-        <section style={section}>
+        <section>
+          <div className="container-test">
+          <div className="row-test" style={{fontSize: 10, height: 'auto'}}>
+              { computers.map((comp, index) =>
+                <div style={{flexBasis: 200}}>{ comp.id }</div>
+              )}
+            </div>
+            <div className="row-test" style={{fontSize: 10, height: 'auto'}}>
+              { computers.map(comp =>
+                <div style={{flexBasis: 200}}>{ comp.name }</div>
+              )}
+            </div>
+            <div className="row-test" style={{fontSize: 10 }}>
+              { computers.map(comp =>
+                <div style={{flexBasis: 200}}>{ comp.model }</div>
+              )}
+            </div>
+            <div className="row-test" style={{fontSize: 15 }}>
+              { computers.map((comp, index) => {
+                const current = computers[index].storage;
+                let flex = 200;
+                let next;
+                if (index + 1 < computers.length) {
+                  next = computers[index+1].storage;
+                  // if ( current === next) { flex += 200 }
+                }
+                return (
+                  <div style={{flexBasis: flex}}>
+                    <input name="storage" type="text" value={current} onChange={this.handleChange} />
+                  </div>
+                )// <div style={{flexBasis: flex}}>{ current }</div>
+              })}
+            </div>
+          </div>
+        </section>
+        {/* <section style={section}>
           <div style={grid}>
+          <div style={row}>
+                <div style={cell}>name</div>
+                <div style={cell}>model</div>
+                <div style={cell}>storage</div>
+              </div>
             { computers.map(comp =>
               <div style={row}>
                 <div style={cell}>{ comp.name }</div>
                 <div style={cell}>{ comp.model }</div>
+                <div style={cell}>{ comp.storage }</div>
               </div>
             )}
           </div>
-        </section>
+        </section> */}
         <section>
           <div style={border} />
           <Screen aspectRatio={16/10} diagonal={15.4}/>
@@ -63,40 +114,6 @@ class App extends Component {
           <div style={border} />
           <Processor/>
           <div style={border} />
-        </section>
-        <section>
-        <div class="container">
-          <div class="column">
-            <div class="button rowspan">
-              Column 1 - rowspan
-            </div>
-            <div class="button">
-              Column 7
-            </div>
-          </div>
-          <div class="column">
-            <div class="button">
-              Column 2
-            </div>
-            <div class="button">
-              Column 5
-            </div>
-            <div class="button">
-              Column 8
-            </div>
-          </div>
-          <div class="column">
-            <div class="button">
-              Column 3
-            </div>
-            <div class="button">
-              Column 6
-            </div>
-            <div class="button">
-              Column 9
-            </div>
-          </div>
-        </div>
         </section>
       </main>
     );
