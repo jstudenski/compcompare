@@ -18,29 +18,43 @@ class App extends Component {
 
   render() {
     const { computers } = this.state
+
+    const grey = '1px solid hsl(202,10%,88%)'
     const border = {
       borderTop: '1px solid #d6d6d6',
       width: 400,
     }
+
+    const grid = {
+      display: 'flex',
+    }
+
     const cell = {
-      borderBottom: '1px solid hsl(202,10%,88%)',
-      borderLeft: '1px solid hsl(202,10%,88%)',
+      borderBottom: grey,
+      borderLeft: grey,
+      padding: 6,
     }
     const section = {
-      borderTop: '1px solid hsl(202,10%,88%)',
-      borderRight: '1px solid hsl(202,10%,88%)',
+      borderTop: grey,
+      borderRight: grey,
+      overflow: 'hidden',
+    }
+    const row = {
+      border: '1px solid pink',
     }
 
     console.log(computers)
     return (
       <main>
         <section style={section}>
-          { computers.map(comp =>
-            <div>
-              <div style={cell}>{ comp.name }</div>
-              <div style={cell}>{ comp.model }</div>
-            </div>
-          )}
+          <div style={grid}>
+            { computers.map(comp =>
+              <div style={row}>
+                <div style={cell}>{ comp.name }</div>
+                <div style={cell}>{ comp.model }</div>
+              </div>
+            )}
+          </div>
         </section>
         <section>
           <div style={border} />
@@ -51,7 +65,6 @@ class App extends Component {
           <Processor/>
           <div style={border} />
         </section>
-
       </main>
     );
   }
