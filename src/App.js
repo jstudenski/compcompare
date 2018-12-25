@@ -56,7 +56,7 @@ class App extends Component {
     return (
       <main>
         <section>
-          <div className="container-test">
+          <article className="container-test">
           <div className="row-test" style={{fontSize: 10, height: 'auto'}}>
               { computers.map((comp, index) =>
                 <div style={{flexBasis: 200}}>{ comp.id }</div>
@@ -88,7 +88,7 @@ class App extends Component {
                 )
               })}
             </div>
-          </div>
+          </article>
         </section>
         <section>
           <div style={border} />
