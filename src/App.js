@@ -50,7 +50,7 @@ class App extends Component {
       overflow: 'hidden',
     }
     const row = {
-      // border: '1px solid pink',
+      border: '1px solid pink',
     }
 
     return (
