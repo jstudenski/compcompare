@@ -95,7 +95,9 @@ class App extends Component {
         <section>
           <div style={border} />
           <Screen aspectRatio={16/10} diagonal={15.4}/>
+          <div style={border} />
           <Screen diagonal={13.3}/>
+          <div style={border} />
           <Storage size={128}/>
           <div style={border} />
           <Processor/>
