@@ -33,6 +33,8 @@ class App extends Component {
     const border = {
       borderTop: '1px solid #d6d6d6',
       width: 400,
+      marginTop: 20,
+      marginBottom: 20,
     }
     const grid = {
       display: 'flex',
