@@ -85,7 +85,12 @@ class App extends Component {
                 }
                 return (
                   <div style={{flexBasis: flex}}>
-                    <input name="storage" type="text" value={current} onChange={this.handleChange} />
+                    <input
+                      name="storage"
+                      onChange={this.handleChange}
+                      type="text"
+                      value={current}
+                    />
                   </div>
                 )
               })}
