@@ -60,7 +60,7 @@ class App extends Component {
         <section>
           <article className="container-test">
           <div className="row-test" style={{fontSize: 10, height: 'auto'}}>
-              { computers.map((comp, index) =>
+              { computers.map(comp =>
                 <div style={{flexBasis: 200}}>{ comp.id }</div>
               )}
             </div>
