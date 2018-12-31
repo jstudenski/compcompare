@@ -32,9 +32,9 @@ class App extends Component {
     const grey = '1px solid hsl(202,10%,88%)'
     const border = {
       borderTop: '1px solid #d6d6d6',
-      width: 400,
-      marginTop: 20,
       marginBottom: 20,
+      marginTop: 20,
+      width: 400,
     }
     const grid = {
       display: 'flex',
@@ -42,13 +42,13 @@ class App extends Component {
     const cell = {
       borderBottom: grey,
       borderLeft: grey,
-      padding: 6,
       height: 200,
       overflow: 'hidden',
+      padding: 6,
     }
     const section = {
-      borderTop: grey,
       borderRight: grey,
+      borderTop: grey,
       overflow: 'hidden',
     }
     const row = {
