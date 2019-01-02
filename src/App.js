@@ -11,10 +11,6 @@ class App extends Component {
     this.state = {computers: []}
   }
 
-  // get userRef() {
-  //   return firestore.doc(`users/${this.uid}`);
-  // }
-
   componentDidMount = async () => {
     const snapshot = await firestore.collection('data').get();
     const computers = snapshot.docs.map(computer => ({ id: computer.id, ...computer.data() }));
