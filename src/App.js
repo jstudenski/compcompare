@@ -51,6 +51,14 @@ class App extends Component {
       border: '1px solid pink',
     }
 
+    const container = {
+      borderTop: '1px solid hsl(202,10%,88%)',
+      borderRight: '1px solid hsl(202,10%,88%)',
+      display: 'flex',
+      flexWrap: 'wrap',
+      boxSizing: 'border-box'
+    }
+
     return (
       <main>
         <section>

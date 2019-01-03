@@ -17,14 +17,6 @@ input {
   width: 50px;
 }
 
-.container-test {
-  border-top: 1px solid hsl(202,10%,88%);
-  border-right: 1px solid hsl(202,10%,88%);
-  display: flex;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-}
-
 .row-test {
   display: flex;
   box-sizing: border-box;
