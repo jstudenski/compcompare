@@ -1,6 +1,27 @@
 main {
   text-align: center;
+  display: grid;
+  grid-template-columns: 40px 50px auto 50px 40px;
+  grid-template-rows: 20px 100px auto;
+  border: 1px solid aquamarine;
 }
+
+.item-a {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: auto;
+  border: 2px solid pink;
+}
+
+.item-b {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: auto;
+  grid-row-end: auto;
+  border: 2px solid red;
+}
+
 
 @font-face {
   font-family: 'fredoka-one';

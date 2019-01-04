@@ -61,6 +61,8 @@ class App extends Component {
 
     return (
       <main>
+        <div className="item-a">a</div>
+        <div className="item-b">b</div>
         <section>
           <article className="container-test">
           <div className="row-test" style={{fontSize: 10, height: 'auto'}}>
