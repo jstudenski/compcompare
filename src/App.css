@@ -1,4 +1,4 @@
-main {
+/* main {
   text-align: center;
   display: grid;
   grid-template-columns: 40px 50px auto 50px 40px;
@@ -20,7 +20,7 @@ main {
   grid-row-start: 3;
   grid-row-end: 4;
   border: 2px solid red;
-}
+} */
 
 
 @font-face {

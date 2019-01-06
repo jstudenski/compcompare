@@ -12,15 +12,20 @@ class App extends Component {
   }
 
   componentDidMount = async () => {
-    const snapshot = await firestore.collection('data').get();
+    const snapshot = await firestore.collection('computers').get();
     const computers = snapshot.docs.map(computer => ({ id: computer.id, ...computer.data() }));
-    console.log(computers)
+    // console.log(computers)
     this.setState({ computers });
   }
 
   handleChange = event => {
     const { name, value } = event.target;
-    this.setState({ [name]: value });
+    const firebaseid = event.target.getAttribute('firebaseid');
+
+    let computers = [...this.state.computers];
+    let index = computers.findIndex(el => el.id == firebaseid);
+    computers[index][name] = value
+    this.setState({ computers });
   };
 
   render() {
@@ -58,11 +63,12 @@ class App extends Component {
       flexWrap: 'wrap',
       boxSizing: 'border-box'
     }
-
+    console.log(this.state)
     return (
       <main>
         <div className="item-a">a</div>
         <div className="item-b">b</div>
+        <button>New Record</button>
         <section>
           <article className="container-test">
           <div className="row-test" style={{fontSize: 10, height: 'auto'}}>
@@ -77,25 +83,26 @@ class App extends Component {
             </div>
             <div className="row-test" style={{fontSize: 10 }}>
               { computers.map(comp =>
-                <div style={{flexBasis: 200}}>{ comp.model }</div>
+                <div style={{flexBasis: 200}}>{ comp.screenSize }</div>
               )}
             </div>
             <div className="row-test" style={{fontSize: 15 }}>
               { computers.map((comp, index) => {
-                const current = computers[index].storage;
-                let flex = 200;
-                let next;
-                if (index + 1 < computers.length) {
-                  next = computers[index+1].storage;
-                  // if ( current === next) { flex += 200 }
-                }
+                // const current = computers[index].storageSize;
+                // let flex = 200;
+                // let next;
+                // if (index + 1 < computers.length) {
+                //   next = computers[index+1].storageSize;
+                //   // if ( current === next) { flex += 200 }
+                // }
                 return (
-                  <div style={{flexBasis: flex}}>
+                  <div style={{flexBasis: 200}}>
                     <input
-                      name="storage"
+                      name="storageSize"
+                      firebaseid={computers[index].id}
                       onChange={this.handleChange}
                       type="text"
-                      value={current}
+                      value={computers[index].storageSize}
                     />
                   </div>
                 )
