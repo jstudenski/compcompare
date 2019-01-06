@@ -68,6 +68,7 @@ async function resolve(data, path = []) {
       }
     }
 
+
     // If document is empty then it means it only consisted of collections.
     if (!isEmpty(documentData)) {
       // Upload a document free of collections.
