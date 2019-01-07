@@ -14,18 +14,21 @@ class App extends Component {
   componentDidMount = async () => {
     const snapshot = await firestore.collection('computers').get();
     const computers = snapshot.docs.map(computer => ({ id: computer.id, ...computer.data() }));
-    // console.log(computers)
     this.setState({ computers });
   }
 
   handleChange = event => {
     const { name, value } = event.target;
     const firebaseid = event.target.getAttribute('firebaseid');
-
     let computers = [...this.state.computers];
-    let index = computers.findIndex(el => el.id == firebaseid);
+    const index = computers.findIndex(el => el.id == firebaseid);
     computers[index][name] = value
+
+    const postRef =  firestore.doc(`computers/${firebaseid}`);
+    postRef.update({ [name]: value });
+
     this.setState({ computers });
+
   };
 
   render() {
@@ -82,8 +85,19 @@ class App extends Component {
               )}
             </div>
             <div className="row-test" style={{fontSize: 10 }}>
-              { computers.map(comp =>
-                <div style={{flexBasis: 200}}>{ comp.screenSize }</div>
+              { computers.map((comp, index) => {
+               // <div style={{flexBasis: 200}}>{ comp.screenSize }</div>
+                return (
+                  <div style={{flexBasis: 200}}>
+                    <input
+                      name="screenSize"
+                      firebaseid={computers[index].id}
+                      onChange={this.handleChange}
+                      type="text"
+                      value={computers[index].screenSize}
+                    />
+                  </div>
+                )}
               )}
             </div>
             <div className="row-test" style={{fontSize: 15 }}>
