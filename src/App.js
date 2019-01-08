@@ -29,7 +29,21 @@ class App extends Component {
 
     this.setState({ computers });
 
-  };
+  }
+
+  renderCell = (comp, name, value) => {
+    return (
+      <div style={{flexBasis: 200}}>
+        <input
+          name={name}
+          firebaseid={comp.id}
+          onChange={this.handleChange}
+          type="text"
+          value={value}
+        />
+      </div>
+    )
+  }
 
   render() {
     const { computers } = this.state
@@ -66,11 +80,11 @@ class App extends Component {
       flexWrap: 'wrap',
       boxSizing: 'border-box'
     }
-    console.log(this.state)
+    // console.log(this.state)
     return (
       <main>
         <div className="item-a">a</div>
-        <div className="item-b">b</div>
+        <div className="item-b"></div>
         <button>New Record</button>
         <section>
           <article className="container-test">
@@ -84,43 +98,11 @@ class App extends Component {
                 <div style={{flexBasis: 200}}>{ comp.name }</div>
               )}
             </div>
-            <div className="row-test" style={{fontSize: 10 }}>
-              { computers.map((comp, index) => {
-               // <div style={{flexBasis: 200}}>{ comp.screenSize }</div>
-                return (
-                  <div style={{flexBasis: 200}}>
-                    <input
-                      name="screenSize"
-                      firebaseid={computers[index].id}
-                      onChange={this.handleChange}
-                      type="text"
-                      value={computers[index].screenSize}
-                    />
-                  </div>
-                )}
-              )}
+            <div className="row-test" style={{fontSize: 15 }}>
+              { computers.map(comp => this.renderCell(comp, 'screenSize', comp.screenSize)) }
             </div>
             <div className="row-test" style={{fontSize: 15 }}>
-              { computers.map((comp, index) => {
-                // const current = computers[index].storageSize;
-                // let flex = 200;
-                // let next;
-                // if (index + 1 < computers.length) {
-                //   next = computers[index+1].storageSize;
-                //   // if ( current === next) { flex += 200 }
-                // }
-                return (
-                  <div style={{flexBasis: 200}}>
-                    <input
-                      name="storageSize"
-                      firebaseid={computers[index].id}
-                      onChange={this.handleChange}
-                      type="text"
-                      value={computers[index].storageSize}
-                    />
-                  </div>
-                )
-              })}
+              { computers.map(comp => this.renderCell(comp, 'storageSize', comp.storageSize)) }
             </div>
           </article>
         </section>
