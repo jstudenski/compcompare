@@ -31,6 +31,14 @@ class App extends Component {
 
   }
 
+  handleNewRecord = event => {
+    firestore.collection('computers').add({createdAt: new Date()});
+  };
+
+  handleRemoveComputer = (id) => {
+    console.log(id)
+  }
+
   renderCell = (comp, name, value) => {
     return (
       <div style={{flexBasis: 200}}>
@@ -83,30 +91,29 @@ class App extends Component {
     // console.log(this.state)
     return (
       <main>
-        <div className="item-a">a</div>
+        <div className="item-a"></div>
         <div className="item-b"></div>
-        <button>New Record</button>
+        <button onClick={this.handleNewRecord}>New Record</button>
         <section>
           <article className="container-test">
           <div className="row-test" style={{fontSize: 10, height: 'auto'}}>
-              { computers.map(comp =>
-                <div style={{flexBasis: 200}}>{ comp.id }</div>
-              )}
+              { computers.map(comp => <div style={{flexBasis: 200}}>{ comp.id }</div> )}
             </div>
-            <div className="row-test" style={{fontSize: 10, height: 'auto'}}>
-              { computers.map(comp =>
-                <div style={{flexBasis: 200}}>{ comp.name }</div>
-              )}
+            <div className="row-test">
+              { computers.map(comp => this.renderCell(comp, 'name', comp.name)) }
             </div>
-            <div className="row-test" style={{fontSize: 15 }}>
+            <div className="row-test">
               { computers.map(comp => this.renderCell(comp, 'screenSize', comp.screenSize)) }
             </div>
-            <div className="row-test" style={{fontSize: 15 }}>
+            <div className="row-test">
               { computers.map(comp => this.renderCell(comp, 'storageSize', comp.storageSize)) }
+            </div>
+            <div className="row-test">
+              { computers.map(comp => <div style={{flexBasis: 200}}><button onClick={() => this.handleRemoveComputer(comp.id)}>delete</button></div> )}
             </div>
           </article>
         </section>
-        <section>
+        {/* <section>
           <div style={border} />
           <Screen aspectRatio={16/10} diagonal={15.4}/>
           <div style={border} />
@@ -116,7 +123,7 @@ class App extends Component {
           <div style={border} />
           <Processor/>
           <div style={border} />
-        </section>
+        </section> */}
       </main>
     );
   }
