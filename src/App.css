@@ -39,6 +39,10 @@ input {
   box-sizing: border-box;
   height: 100%;
   border: none;
+  padding: 6px;
+  font-size: 13px;
+  /* box-shadow: 0 0 0 2px #2d7ff9 !important;
+  border-radius: 1px; */
 }
 
 .row-test {

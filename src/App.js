@@ -70,7 +70,6 @@ class App extends Component {
       borderLeft: grey,
       height: 200,
       overflow: 'hidden',
-      padding: 6,
     }
     const section = {
       borderRight: grey,
