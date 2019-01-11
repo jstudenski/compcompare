@@ -6,9 +6,8 @@ import Processor from './components/processor'
 import './App.css';
 
 class App extends Component {
-  constructor ( props ) {
-    super(props);
-    this.state = {computers: []}
+  state = {
+    computers: []
   }
 
   componentDidMount = async () => {
@@ -28,27 +27,33 @@ class App extends Component {
     postRef.update({ [name]: value });
 
     this.setState({ computers });
-
   }
 
-  handleNewRecord = event => {
+  handleNewRecord = async () => {
     firestore.collection('computers').add({createdAt: new Date()});
+    // remove
+    const snapshot = await firestore.collection('computers').get();
+    const computers = snapshot.docs.map(computer => ({ id: computer.id, ...computer.data() }));
+    this.setState({ computers });
   };
 
   handleRemoveComputer = (id) => {
     console.log(id)
+    firestore.doc(`computers/${id}`).delete()
   }
 
   renderCell = (comp, name, value) => {
     return (
       <div style={{flexBasis: 200}}>
-        <input
-          name={name}
-          firebaseid={comp.id}
-          onChange={this.handleChange}
-          type="text"
-          value={value}
-        />
+       <form autocomplete="off">
+          <input
+            firebaseid={comp.id}
+            name={name}
+            onChange={this.handleChange}
+            type="text"
+            value={value}
+          />
+        </form>
       </div>
     )
   }
