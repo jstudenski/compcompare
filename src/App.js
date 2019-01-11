@@ -3,6 +3,7 @@ import { firestore } from './firebase';
 import Screen from './components/screen'
 import Storage from './components/storage'
 import Processor from './components/processor'
+import Cell from './components/cell'
 import './App.css';
 
 class App extends Component {
@@ -43,18 +44,22 @@ class App extends Component {
   }
 
   renderCell = (comp, name, value) => {
+    const cellStyle = {
+      borderBottom: '1px solid hsl(202,10%,88%)',
+      borderLeft: '1px solid hsl(202,10%,88%)',
+      boxSizing: 'border-box',
+      flexBasis: 200,
+    }
     return (
-      <div style={{flexBasis: 200}}>
-       <form autocomplete="off">
-          <input
-            firebaseid={comp.id}
-            name={name}
-            onChange={this.handleChange}
-            type="text"
-            value={value}
-          />
-        </form>
-      </div>
+      <form autocomplete="off" style={ cellStyle }>
+        <input
+          firebaseid={comp.id}
+          name={name}
+          onChange={this.handleChange}
+          type="text"
+          value={value}
+        />
+      </form>
     )
   }
 
@@ -67,22 +72,9 @@ class App extends Component {
       marginTop: 20,
       width: 400,
     }
+
     const grid = {
       display: 'flex',
-    }
-    const cell = {
-      borderBottom: grey,
-      borderLeft: grey,
-      height: 200,
-      overflow: 'hidden',
-    }
-    const section = {
-      borderRight: grey,
-      borderTop: grey,
-      overflow: 'hidden',
-    }
-    const row = {
-      border: '1px solid pink',
     }
 
     const container = {
@@ -92,30 +84,30 @@ class App extends Component {
       flexWrap: 'wrap',
       boxSizing: 'border-box'
     }
-    // console.log(this.state)
+
     return (
       <main>
-        <div className="item-a"></div>
-        <div className="item-b"></div>
         <button onClick={this.handleNewRecord}>New Record</button>
         <section>
-          <article className="container-test">
-          <div className="row-test" style={{fontSize: 10, height: 'auto'}}>
+            <div className="row" style={{fontSize: 10, height: 'auto'}}>
               { computers.map(comp => <div style={{flexBasis: 200}}>{ comp.id }</div> )}
             </div>
-            <div className="row-test">
+            <div className="row">
               { computers.map(comp => this.renderCell(comp, 'name', comp.name)) }
             </div>
-            <div className="row-test">
+            <div className="row">
               { computers.map(comp => this.renderCell(comp, 'screenSize', comp.screenSize)) }
             </div>
-            <div className="row-test">
+            <div className="row">
               { computers.map(comp => this.renderCell(comp, 'storageSize', comp.storageSize)) }
             </div>
-            <div className="row-test">
-              { computers.map(comp => <div style={{flexBasis: 200}}><button onClick={() => this.handleRemoveComputer(comp.id)}>delete</button></div> )}
+            <div className="row">
+              { computers.map(comp => (
+                <div style={{flexBasis: 200}}>
+                  <button onClick={() => this.handleRemoveComputer(comp.id)}>delete</button>
+                </div>
+              ))}
             </div>
-          </article>
         </section>
         {/* <section>
           <div style={border} />

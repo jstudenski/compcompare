@@ -1,60 +1,27 @@
-/* main {
-  text-align: center;
-  display: grid;
-  grid-template-columns: 40px 50px auto 50px 40px;
-  grid-template-rows: 20px auto auto 100px auto;
-  border: 1px solid aquamarine;
-}
-
-.item-a {
-  grid-column-start: 3;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: auto;
-  border: 2px solid pink;
-}
-
-.item-b {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  border: 2px solid red;
-} */
-
-
 @font-face {
   font-family: 'fredoka-one';
   src: local('FredokaOne-Regular'), url(./fonts/FredokaOne-Regular.ttf) format('truetype');
 }
 
 section {
-  width: 98vw;
+  width: fit-content;
   background-color: #f3f3f3;
   margin: 1vw;
+  border-top: 1px solid hsl(202,10%,88%);
+  border-right: 1px solid hsl(202,10%,88%);
 }
 
 input {
   width: 100%;
   box-sizing: border-box;
-  height: 100%;
   border: none;
   padding: 6px;
   font-size: 13px;
-  /* box-shadow: 0 0 0 2px #2d7ff9 !important;
-  border-radius: 1px; */
+  height: 30px;
 }
 
-.row-test {
+.row {
   display: flex;
   box-sizing: border-box;
-  height: 40px;
   width: 100%;
-}
-
-.row-test div {
-  border-bottom: 1px solid hsl(202,10%,88%);
-  border-left: 1px solid hsl(202,10%,88%);
-  box-sizing: border-box;
-  /* flex-basis: 100px; */
 }
