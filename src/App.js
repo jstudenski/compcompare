@@ -93,7 +93,7 @@ class App extends Component {
               { computers.map(comp => <div style={{flexBasis: 200}}>{ comp.id }</div> )}
             </div>
             <div className="row">
-              { computers.map(comp => this.renderCell(comp, 'name', comp.name)) }
+              { computers.map(comp => <Cell comp={comp} name={'name'} value={comp.name} /> )}
             </div>
             <div className="row">
               { computers.map(comp => this.renderCell(comp, 'screenSize', comp.screenSize)) }
