@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { firestore } from './firebase';
-import Screen from './components/screen'
-import Storage from './components/storage'
-import Processor from './components/processor'
+// import Screen from './components/screen'
+// import Storage from './components/storage'
+// import Processor from './components/processor'
 import Cell from './components/cell'
 import './App.css';
 
@@ -65,25 +65,25 @@ class App extends Component {
 
   render() {
     const { computers } = this.state
-    // const grey = '1px solid hsl(202,10%,88%)'
-    // const border = {
-    //   borderTop: '1px solid #d6d6d6',
-    //   marginBottom: 20,
-    //   marginTop: 20,
-    //   width: 400,
-    // }
+    const grey = '1px solid hsl(202,10%,88%)'
+    const border = {
+      borderTop: '1px solid #d6d6d6',
+      marginBottom: 20,
+      marginTop: 20,
+      width: 400,
+    }
 
-    // const grid = {
-    //   display: 'flex',
-    // }
+    const grid = {
+      display: 'flex',
+    }
 
-    // const container = {
-    //   borderTop: '1px solid hsl(202,10%,88%)',
-    //   borderRight: '1px solid hsl(202,10%,88%)',
-    //   display: 'flex',
-    //   flexWrap: 'wrap',
-    //   boxSizing: 'border-box'
-    // }
+    const container = {
+      borderTop: '1px solid hsl(202,10%,88%)',
+      borderRight: '1px solid hsl(202,10%,88%)',
+      display: 'flex',
+      flexWrap: 'wrap',
+      boxSizing: 'border-box'
+    }
 
     return (
       <main>
