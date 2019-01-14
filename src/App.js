@@ -1,20 +1,32 @@
-import React, { Component } from 'react';
+import React, { Component, useContext } from 'react';
 import { firestore } from './firebase';
 // import Screen from './components/screen'
 // import Storage from './components/storage'
 // import Processor from './components/processor'
 import Cell from './components/cell'
 import './App.css';
+import { ComputersContext } from './providers/ComputersProvider';
+
+const collectIdsAndDocs = doc => {
+  return { id: doc.id, ...doc.data() };
+};
 
 class App extends Component {
+
   state = {
     computers: []
   }
 
   componentDidMount = async () => {
-    const snapshot = await firestore.collection('computers').get();
-    const computers = snapshot.docs.map(computer => ({ id: computer.id, ...computer.data() }));
-    this.setState({ computers });
+  //   const snapshot = await firestore.collection('computers').get();
+   //  const computers = snapshot.docs.map(computer => ({ id: computer.id, ...computer.data() }));
+
+    firestore.collection('computers').onSnapshot(snapshot => {
+      const computers = snapshot.docs.map(collectIdsAndDocs);
+      this.setState({ computers });
+    });
+
+   //  this.setState({ computers });
   }
 
   handleChange = event => {
@@ -26,7 +38,6 @@ class App extends Component {
 
     const postRef =  firestore.doc(`computers/${firebaseid}`);
     postRef.update({ [name]: value });
-
     this.setState({ computers });
   }
 
@@ -39,7 +50,7 @@ class App extends Component {
   };
 
   handleRemoveComputer = (id) => {
-    console.log(id)
+    // console.log(id)
     firestore.doc(`computers/${id}`).delete()
   }
 
@@ -63,8 +74,13 @@ class App extends Component {
     )
   }
 
+
   render() {
     const { computers } = this.state
+    // const temp = useContext(ComputersContext);
+    // console.log(temp)
+    // const posts = useContext(ComputersContext);
+
     const grey = '1px solid hsl(202,10%,88%)'
     const border = {
       borderTop: '1px solid #d6d6d6',
@@ -84,7 +100,8 @@ class App extends Component {
       flexWrap: 'wrap',
       boxSizing: 'border-box'
     }
-
+    // console.log('state:',this.state)
+    // console.log('props:',this.props)
     return (
       <main>
         <button onClick={this.handleNewRecord}>New Record</button>
@@ -92,9 +109,9 @@ class App extends Component {
             <div className="row" style={{fontSize: 10, height: 'auto'}}>
               { computers.map(comp => <div style={{flexBasis: 200}}>{ comp.id }</div> )}
             </div>
-            <div className="row">
-              { computers.map(comp => <Cell comp={comp} name={'name'} value={comp.name} /> )}
-            </div>
+            {/* <div className="row">
+              { computers.map(comp => <Cell computers={computers} comp={comp} name={'name'} value={comp.name} /> )}
+            </div> */}
             <div className="row">
               { computers.map(comp => this.renderCell(comp, 'screenSize', comp.screenSize)) }
             </div>
