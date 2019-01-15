@@ -18,15 +18,10 @@ class App extends Component {
   }
 
   componentDidMount = async () => {
-  //   const snapshot = await firestore.collection('computers').get();
-   //  const computers = snapshot.docs.map(computer => ({ id: computer.id, ...computer.data() }));
-
     firestore.collection('computers').onSnapshot(snapshot => {
       const computers = snapshot.docs.map(collectIdsAndDocs);
       this.setState({ computers });
     });
-
-   //  this.setState({ computers });
   }
 
   handleChange = event => {
@@ -35,22 +30,15 @@ class App extends Component {
     let computers = [...this.state.computers];
     const index = computers.findIndex(el => el.id == firebaseid);
     computers[index][name] = value
-
     const postRef =  firestore.doc(`computers/${firebaseid}`);
     postRef.update({ [name]: value });
-    this.setState({ computers });
   }
 
   handleNewRecord = async () => {
     firestore.collection('computers').add({createdAt: new Date()});
-    // remove
-    const snapshot = await firestore.collection('computers').get();
-    const computers = snapshot.docs.map(computer => ({ id: computer.id, ...computer.data() }));
-    this.setState({ computers });
   };
 
   handleRemoveComputer = (id) => {
-    // console.log(id)
     firestore.doc(`computers/${id}`).delete()
   }
 
@@ -77,10 +65,6 @@ class App extends Component {
 
   render() {
     const { computers } = this.state
-    // const temp = useContext(ComputersContext);
-    // console.log(temp)
-    // const posts = useContext(ComputersContext);
-
     const grey = '1px solid hsl(202,10%,88%)'
     const border = {
       borderTop: '1px solid #d6d6d6',
@@ -100,8 +84,7 @@ class App extends Component {
       flexWrap: 'wrap',
       boxSizing: 'border-box'
     }
-    // console.log('state:',this.state)
-    // console.log('props:',this.props)
+
     return (
       <main>
         <button onClick={this.handleNewRecord}>New Record</button>
