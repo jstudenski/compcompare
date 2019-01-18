@@ -5,6 +5,7 @@ import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
 import { Button, Welcome } from '@storybook/react/demo';
+import Screen from '../components/screen';
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
@@ -17,3 +18,7 @@ storiesOf('Button', module)
       </span>
     </Button>
   ));
+
+storiesOf('Screen', module)
+  .add('to Storybook', () => <Screen diagonal={16} />)
+  .add('to Again', () => <Screen diagonal={14} />);
