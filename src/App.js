@@ -1,11 +1,11 @@
-import React, { Component, useContext } from 'react';
+import React, { Component } from 'react';
 import { firestore } from './firebase';
 // import Screen from './components/screen'
 // import Storage from './components/storage'
 // import Processor from './components/processor'
 import Cell from './components/cell'
 import './App.css';
-import { ComputersContext } from './providers/ComputersProvider';
+// import { ComputersContext } from './providers/ComputersProvider';
 
 const collectIdsAndDocs = doc => {
   return { id: doc.id, ...doc.data() };
@@ -28,7 +28,7 @@ class App extends Component {
     const { name, value } = event.target;
     const firebaseid = event.target.getAttribute('firebaseid');
     let computers = [...this.state.computers];
-    const index = computers.findIndex(el => el.id == firebaseid);
+    const index = computers.findIndex(el => el.id === firebaseid);
     computers[index][name] = value
     const postRef =  firestore.doc(`computers/${firebaseid}`);
     postRef.update({ [name]: value });
@@ -73,9 +73,9 @@ class App extends Component {
             <div className="row" style={{fontSize: 10, height: 'auto'}}>
               { computers.map(comp => <div style={{flexBasis: 200}}>{ comp.id }</div> )}
             </div>
-            {/* <div className="row">
-              { computers.map(comp => <Cell computers={computers} comp={comp} name={'name'} value={comp.name} /> )}
-            </div> */}
+            <div className="row">
+              { computers.map(comp => <Cell comp={comp} name={'name'} value={comp.name} /> )}
+            </div>
             <div className="row">
               { computers.map(comp => this.renderCell(comp, 'screenSize', comp.screenSize)) }
             </div>
