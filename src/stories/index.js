@@ -20,5 +20,9 @@ storiesOf('Button', module)
   ));
 
 storiesOf('Screen', module)
-  .add('to Storybook', () => <Screen diagonal={16} />)
-  .add('to Again', () => <Screen diagonal={14} />);
+  .add('to Storybook', () => (
+    <div>
+      <Screen diagonal={16} />
+      <Screen diagonal={14} />
+    </div>
+  ));
