@@ -4,8 +4,8 @@ import { firestore } from './firebase';
 // import Storage from './components/storage'
 // import Processor from './components/processor'
 import Cell from './components/cell'
+import Row from './components/row'
 import './App.css';
-// import { ComputersContext } from './providers/ComputersProvider';
 
 const collectIdsAndDocs = doc => {
   return { id: doc.id, ...doc.data() };
@@ -42,27 +42,6 @@ class App extends Component {
     firestore.doc(`computers/${id}`).delete()
   }
 
-  renderCell = (comp, name, value) => {
-    const cellStyle = {
-      borderBottom: '1px solid hsl(202,10%,88%)',
-      borderLeft: '1px solid hsl(202,10%,88%)',
-      boxSizing: 'border-box',
-      flexBasis: 200,
-    }
-    return (
-      <form autocomplete="off" style={ cellStyle }>
-        <input
-          firebaseid={comp.id}
-          name={name}
-          onChange={this.handleChange}
-          type="text"
-          value={value}
-        />
-      </form>
-    )
-  }
-
-
   render() {
     const { computers } = this.state
 
@@ -70,25 +49,18 @@ class App extends Component {
       <main>
         <button onClick={this.handleNewRecord}>New Record</button>
         <section>
-            <div className="row" style={{fontSize: 10, height: 'auto'}}>
-              { computers.map(comp => <div style={{flexBasis: 200}}>{ comp.id }</div> )}
-            </div>
-            <div className="row">
-              { computers.map(comp => <Cell comp={comp} name={'name'} value={comp.name} /> )}
-            </div>
-            <div className="row">
-              { computers.map(comp => this.renderCell(comp, 'screenSize', comp.screenSize)) }
-            </div>
-            <div className="row">
-              { computers.map(comp => this.renderCell(comp, 'storageSize', comp.storageSize)) }
-            </div>
-            <div className="row">
-              { computers.map(comp => (
-                <div style={{flexBasis: 200}}>
-                  <button onClick={() => this.handleRemoveComputer(comp.id)}>delete</button>
-                </div>
-              ))}
-            </div>
+          <Row items={computers} property='id' disabled/>
+          <Row items={computers} property='name'/>
+          <Row items={computers} property='screenSize'/>
+          <Row items={computers} property='storageSize'/>
+          <div className="row">
+            <Cell />
+            { computers.map(item => (
+              <Cell center key={item.id } item={item}>
+                <button onClick={() => this.handleRemoveComputer(item.id)}>delete</button>
+              </Cell>
+            ))}
+          </div>
         </section>
         {/* <section>
           <div style={border} />

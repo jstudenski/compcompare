@@ -12,7 +12,6 @@ class ComputersProvider extends Component {
   unsubscribeFromFirestore = null;
 
   componentDidMount = () => {
-    console.log('hello')
     this.unsubscribeFromFirestore = firestore.collection('computers').onSnapshot(snapshot => {
       const computers = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }))
       this.setState({ computers })

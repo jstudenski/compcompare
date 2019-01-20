@@ -15,7 +15,7 @@ export const provider = new firebase.auth.GoogleAuthProvider();
 export const signInWithGoogle = () => auth.signInWithPopup(provider);
 export const signOut = () => auth.signOut();
 
-firestore.settings({ timestampsInSnapshots: true });
+// firestore.settings({ timestampsInSnapshots: true });
 
 // export const createUserProfileDocument = async (user, additionalData) => {
 //   if (!user) return;
