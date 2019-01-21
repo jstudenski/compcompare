@@ -7,6 +7,7 @@ import NewProperty from './components/newProperty'
 import Cell from './components/cell'
 import Row from './components/row'
 import './App.css';
+import { addItem, removeItem } from './utils/functions'
 
 const collectIdsAndDocs = doc => {
   return { id: doc.id, ...doc.data() };
@@ -37,34 +38,33 @@ class App extends Component {
     let computers = [...this.state.computers];
     const index = computers.findIndex(el => el.id === firebaseid);
     computers[index][name] = value
-    const postRef =  firestore.doc(`computers/${firebaseid}`);
+    const postRef = firestore.doc(`computers/${firebaseid}`);
     postRef.update({ [name]: value });
   }
 
-  handleNewRecord = async () => {
-    firestore.collection('computers').add({createdAt: new Date()});
-  };
+  // handleNewRecord = async () => {
+  //   firestore.collection('computers').add({createdAt: new Date()});
+  // };
 
-  handleRemoveComputer = (collection, id) => {
-    firestore.doc(`${collection}/${id}`).delete()
-  }
+  // handleRemoveComputer = (collection, id) => {
+  //   firestore.doc(`${collection}/${id}`).delete()
+  // }
 
   render() {
     const { computers, rows } = this.state
-    console.log(rows)
+
     return (
       <main>
-        <button onClick={this.handleNewRecord}>New Record</button>
         <section>
-          <Row items={computers} property='id' disabled/>
-          <Row items={computers} property='name'/>
-          <Row items={computers} property='screenSize' type='number'/>
-          <Row items={computers} property='storageSize'/>
+          <Row collection={'computers'} items={computers} property='id' disabled/>
+          <Row collection={'computers'} items={computers} property='name'/>
+          <Row collection={'computers'} items={computers} property='screenSize' type='number'/>
+          <Row collection={'computers'} items={computers} property='storageSize'/>
           <div className="row">
             <Cell />
             { computers.map(item => (
               <Cell center key={item.id } item={item}>
-                <button onClick={() => this.handleRemoveComputer('computers', item.id)}>delete</button>
+                <button onClick={() => removeItem('computers', item.id)}>delete</button>
               </Cell>
             ))}
           </div>
@@ -89,28 +89,44 @@ class App extends Component {
           <div style={border} />
         </section> */}
         <hr />
-
+        <h4>Edit Title</h4>
+        <button onClick={() => addItem('computers')}>New Record</button>
+        <section>
+        <Row items={computers} property='id' disabled/>
         { rows.map(row => (
           <Fragment key={row.id}>
-            {/* {row.displayName} */}
-            {/* <Cell>{row.displayName}</Cell> */}
-            <Row items={computers} property={ row.displayName }/>
+            <Row
+              collection={'row'}
+              items={computers}
+              property={ row.displayName }
+            />
           </Fragment>
         ))}
+        <div className="row">
+          <Cell />
+          { computers.map(item => (
+            <Cell center key={item.id } item={item}>
+              <button onClick={() => removeItem('computers', item.id)}>delete</button>
+            </Cell>
+          ))}
+        </div>
+        </section>
         <hr />
         <h4>Rows</h4>
         <NewProperty rows={rows}/>
-        <Row items={rows} property='id' disabled/>
-        <Row items={rows} property='displayName'/>
+        <section>
+        <Row items={rows} collection={'rows'} property='id' disabled/>
+        <Row items={rows} collection={'rows'} property='displayName'/>
         <Row disabled items={rows} property='displayOrder'/>
         <div className="row">
           <Cell />
           { rows.map(item => (
               <Cell center key={item.id } item={item}>
-                <button onClick={() => this.handleRemoveComputer('rows', item.id)}>delete</button>
+                <button onClick={() => removeItem('rows', item.id)}>delete</button>
               </Cell>
           ))}
         </div>
+        </section>
         {/* <Row items={rows} property='displayName'/>
         <Row items={rows} property='id'/> */}
       </main>
