@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
+import React, { Fragment, Component } from 'react';
 import { firestore } from './firebase';
-// import Screen from './components/screen'
+import Screen from './components/screen'
 // import Storage from './components/storage'
 // import Processor from './components/processor'
+import NewProperty from './components/newProperty'
 import Cell from './components/cell'
 import Row from './components/row'
 import './App.css';
@@ -14,13 +15,19 @@ const collectIdsAndDocs = doc => {
 class App extends Component {
 
   state = {
-    computers: []
+    computers: [],
+    rows: [],
+    inputValue: '',
   }
 
   componentDidMount = async () => {
     firestore.collection('computers').onSnapshot(snapshot => {
       const computers = snapshot.docs.map(collectIdsAndDocs);
       this.setState({ computers });
+    });
+    firestore.collection('rows').orderBy('displayOrder').onSnapshot(snapshot => {
+      const rows = snapshot.docs.map(collectIdsAndDocs);
+      this.setState({ rows });
     });
   }
 
@@ -38,26 +45,34 @@ class App extends Component {
     firestore.collection('computers').add({createdAt: new Date()});
   };
 
-  handleRemoveComputer = (id) => {
-    firestore.doc(`computers/${id}`).delete()
+  handleRemoveComputer = (collection, id) => {
+    firestore.doc(`${collection}/${id}`).delete()
   }
 
   render() {
-    const { computers } = this.state
-
+    const { computers, rows } = this.state
+    console.log(rows)
     return (
       <main>
         <button onClick={this.handleNewRecord}>New Record</button>
         <section>
           <Row items={computers} property='id' disabled/>
           <Row items={computers} property='name'/>
-          <Row items={computers} property='screenSize'/>
+          <Row items={computers} property='screenSize' type='number'/>
           <Row items={computers} property='storageSize'/>
           <div className="row">
             <Cell />
             { computers.map(item => (
               <Cell center key={item.id } item={item}>
-                <button onClick={() => this.handleRemoveComputer(item.id)}>delete</button>
+                <button onClick={() => this.handleRemoveComputer('computers', item.id)}>delete</button>
+              </Cell>
+            ))}
+          </div>
+          <div className="row">
+            <Cell />
+            { computers.map(item => (
+              <Cell center key={item.id} item={item}>
+                <Screen diagonal={item.screenSize}/>
               </Cell>
             ))}
           </div>
@@ -73,6 +88,31 @@ class App extends Component {
           <Processor/>
           <div style={border} />
         </section> */}
+        <hr />
+
+        { rows.map(row => (
+          <Fragment key={row.id}>
+            {/* {row.displayName} */}
+            {/* <Cell>{row.displayName}</Cell> */}
+            <Row items={computers} property={ row.displayName }/>
+          </Fragment>
+        ))}
+        <hr />
+        <h4>Rows</h4>
+        <NewProperty rows={rows}/>
+        <Row items={rows} property='id' disabled/>
+        <Row items={rows} property='displayName'/>
+        <Row disabled items={rows} property='displayOrder'/>
+        <div className="row">
+          <Cell />
+          { rows.map(item => (
+              <Cell center key={item.id } item={item}>
+                <button onClick={() => this.handleRemoveComputer('rows', item.id)}>delete</button>
+              </Cell>
+          ))}
+        </div>
+        {/* <Row items={rows} property='displayName'/>
+        <Row items={rows} property='id'/> */}
       </main>
     );
   }

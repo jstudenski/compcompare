@@ -20,6 +20,11 @@ input {
   height: 30px;
 }
 
+hr {
+  margin: 30px 0;
+  border-top: 2px solid #ececec;
+}
+
 .row {
   display: flex;
   box-sizing: border-box;
