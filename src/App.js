@@ -7,11 +7,13 @@ import NewProperty from './components/newProperty'
 import Cell from './components/cell'
 import Row from './components/row'
 import './App.css';
-import { addItem, removeItem } from './utils/functions'
+import {
+  addItem,
+  collectIdsAndDocs,
+  removeItem,
+} from './utils/functions'
 
-const collectIdsAndDocs = doc => {
-  return { id: doc.id, ...doc.data() };
-};
+
 
 class App extends Component {
 
@@ -22,14 +24,18 @@ class App extends Component {
   }
 
   componentDidMount = async () => {
-    firestore.collection('computers').onSnapshot(snapshot => {
+    firestore.collection('computers').orderBy('displayOrder').onSnapshot(snapshot => {
       const computers = snapshot.docs.map(collectIdsAndDocs);
       this.setState({ computers });
+      console.log('1')
     });
+    console.log('2')
     firestore.collection('rows').orderBy('displayOrder').onSnapshot(snapshot => {
       const rows = snapshot.docs.map(collectIdsAndDocs);
       this.setState({ rows });
+      console.log('3')
     });
+    console.log('4')
   }
 
   handleChange = event => {
@@ -42,20 +48,12 @@ class App extends Component {
     postRef.update({ [name]: value });
   }
 
-  // handleNewRecord = async () => {
-  //   firestore.collection('computers').add({createdAt: new Date()});
-  // };
-
-  // handleRemoveComputer = (collection, id) => {
-  //   firestore.doc(`${collection}/${id}`).delete()
-  // }
-
   render() {
     const { computers, rows } = this.state
 
     return (
       <main>
-        <section>
+        {/* <section>
           <Row collection={'computers'} items={computers} property='id' disabled/>
           <Row collection={'computers'} items={computers} property='name'/>
           <Row collection={'computers'} items={computers} property='screenSize' type='number'/>
@@ -76,7 +74,8 @@ class App extends Component {
               </Cell>
             ))}
           </div>
-        </section>
+        </section> */}
+
         {/* <section>
           <div style={border} />
           <Screen aspectRatio={16/10} diagonal={15.4}/>
@@ -93,6 +92,7 @@ class App extends Component {
         <button onClick={() => addItem('computers')}>New Record</button>
         <section>
         <Row items={computers} property='id' disabled/>
+        <Row items={computers} property='displayOrder' disabled/>
         { rows.map(row => (
           <Fragment key={row.id}>
             <Row
