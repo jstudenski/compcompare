@@ -13,7 +13,10 @@ import {
   removeItem,
 } from './utils/functions'
 
-
+const Row = styled.section`
+  padding: 4em;
+  background: papayawhip;
+`;
 
 class App extends Component {
 
