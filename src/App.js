@@ -19,7 +19,6 @@ const Row = styled.section`
 `;
 
 class App extends Component {
-
   state = {
     computers: [],
     rows: [],
