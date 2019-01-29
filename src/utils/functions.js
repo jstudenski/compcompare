@@ -8,7 +8,7 @@ export const removeItem = async (collection, id) => {
 
 export const addItem = async (collection) => {
   firestore.collection(collection).orderBy('displayOrder', 'desc').limit(1).get()
-    .then(snap => snap.docs.map(collectIdsAndDocs)[0].displayOrder)
+    .then(snap => (snap.empty ? 0 : snap.docs.map(collectIdsAndDocs)[0].displayOrder))
     .then((displayOrder) => {
       firestore.collection(collection).add({
         createdAt: new Date(),
@@ -16,10 +16,12 @@ export const addItem = async (collection) => {
       });
     });
 };
-  // const ref = firestore.collection(collection);
-  // const query = ref.orderBy('displayOrder', 'desc').limit(1);
-  // const temp = ref.orderBy('displayOrder').limit(3);
-  // console.log(temp);
+
+
+// const ref = firestore.collection(collection);
+// const query = ref.orderBy('displayOrder', 'desc').limit(1);
+// const temp = ref.orderBy('displayOrder').limit(3);
+// console.log(temp);
 
 // const docRef = firestore.collection(collection); // .doc('Rm9cME0VKojzfuNLpYrq');
 
