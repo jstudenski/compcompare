@@ -29,15 +29,11 @@ class App extends Component {
     firestore.collection('computers').orderBy('displayOrder').onSnapshot(snapshot => {
       const computers = snapshot.docs.map(collectIdsAndDocs);
       this.setState({ computers });
-      console.log('1')
     });
-    console.log('2')
     firestore.collection('rows').orderBy('displayOrder').onSnapshot(snapshot => {
       const rows = snapshot.docs.map(collectIdsAndDocs);
       this.setState({ rows });
-      console.log('3')
     });
-    console.log('4')
   }
 
   handleChange = event => {
@@ -98,7 +94,7 @@ class App extends Component {
         { rows.map(row => (
           <Fragment key={row.id}>
             <Row
-              collection={'row'}
+              collection={'computers'}
               items={computers}
               property={ row.displayName }
             />
