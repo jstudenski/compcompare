@@ -110,6 +110,7 @@ class App extends Component {
         </div>
         </section>
         <hr />
+
         <h4>Rows</h4>
         <NewProperty rows={rows}/>
         <section>
