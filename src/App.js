@@ -101,7 +101,7 @@ class App extends Component {
           </Fragment>
         ))}
         <div className="row">
-          <Cell />
+          <NewProperty rows={rows}/>
           { computers.map(item => (
             <Cell center key={item.id } item={item}>
               <button onClick={() => removeItem('computers', item.id)}>delete</button>
@@ -112,13 +112,13 @@ class App extends Component {
         <hr />
 
         <h4>Rows</h4>
-        <NewProperty rows={rows}/>
+        
         <section>
         <Row items={rows} collection={'rows'} property='id' disabled/>
         <Row items={rows} collection={'rows'} property='displayName'/>
         <Row disabled items={rows} property='displayOrder'/>
         <div className="row">
-          <Cell />
+          <Cell>Placeholder 2</Cell>
           { rows.map(item => (
               <Cell center key={item.id } item={item}>
                 <button onClick={() => removeItem('rows', item.id)}>delete</button>
