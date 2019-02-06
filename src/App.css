@@ -4,20 +4,20 @@
 }
 
 section {
-  width: fit-content;
   background-color: #f3f3f3;
-  margin: 1vw;
-  border-top: 1px solid hsl(202,10%,88%);
   border-right: 1px solid hsl(202,10%,88%);
+  border-top: 1px solid hsl(202,10%,88%);
+  margin: 1vw;
+  width: fit-content;
 }
 
 input {
-  width: 100%;
-  box-sizing: border-box;
   border: none;
-  padding: 6px;
+  box-sizing: border-box;
   font-size: 13px;
   height: 30px;
+  padding: 6px;
+  width: 100%;
 }
 
 /* input:focus:parent {
@@ -26,12 +26,12 @@ input {
 
 
 hr {
-  margin: 30px 0;
   border-top: 2px solid #ececec;
+  margin: 30px 0;
 }
 
 .row {
-  display: flex;
   box-sizing: border-box;
+  display: flex;
   width: 100%;
 }
