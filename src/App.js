@@ -1,6 +1,6 @@
 import React, { Fragment, Component } from 'react';
 import { firestore } from './firebase';
-import Screen from './components/screen'
+// import Screen from './components/screen'
 // import Storage from './components/storage'
 // import Processor from './components/processor'
 import NewProperty from './components/newProperty'
