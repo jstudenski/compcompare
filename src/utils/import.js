@@ -1,12 +1,23 @@
-const admin = require("firebase-admin");
-const serviceAccount = require("config/serviceAccountKey.json");
+const admin = require('firebase-admin');
+const serviceAccount = require('config/serviceAccountKey.json');
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://compcompare-5bedb.firebaseio.com"
+  databaseURL: 'https://compcompare-5bedb.firebaseio.com',
 });
 
-const data = require("./bby.json");
+const data = require('./bby.json');
+
+
+// Checks if object is empty.
+function isEmpty(obj) {
+  for (const key in obj) {
+    if (obj.hasOwnProperty(key)) {
+      return false;
+    }
+  }
+  return true;
+}
 
 /**
  * Data is a collection if
@@ -15,16 +26,16 @@ const data = require("./bby.json");
  */
 function isCollection(data, path, depth) {
   if (
-    typeof data != 'object' ||
-    data == null ||
-    data.length === 0 ||
-    isEmpty(data)
+    typeof data !== 'object'
+    || data == null
+    || data.length === 0
+    || isEmpty(data)
   ) {
     return false;
   }
 
   for (const key in data) {
-    if (typeof data[key] != 'object' || data[key] == null) {
+    if (typeof data[key] !== 'object' || data[key] == null) {
       // If there is at least one non-object item then it data then it cannot be collection.
       return false;
     }
@@ -33,15 +44,6 @@ function isCollection(data, path, depth) {
   return true;
 }
 
-// Checks if object is empty.
-function isEmpty(obj) {
-  for(const key in obj) {
-    if(obj.hasOwnProperty(key)) {
-      return false;
-    }
-  }
-  return true;
-}
 
 async function upload(data, path) {
   return await admin.firestore()

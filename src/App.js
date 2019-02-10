@@ -3,51 +3,46 @@ import { firestore } from './firebase';
 // import Screen from './components/screen'
 // import Storage from './components/storage'
 // import Processor from './components/processor'
-import NewProperty from './components/newProperty'
-import Cell from './components/cell'
-import Row from './components/row'
+import NewProperty from './components/newProperty';
+import Cell from './components/cell';
+import Row from './components/row';
 import './App.css';
 import {
   addItem,
   collectIdsAndDocs,
   removeItem,
-} from './utils/functions'
-
-// const Row = styled.section`
-//   padding: 4em;
-//   background: papayawhip;
-// `;
+} from './utils/functions';
 
 class App extends Component {
   state = {
     computers: [],
     rows: [],
-    inputValue: '',
   }
 
   componentDidMount = async () => {
-    firestore.collection('computers').orderBy('displayOrder').onSnapshot(snapshot => {
+    firestore.collection('computers').orderBy('displayOrder').onSnapshot((snapshot) => {
       const computers = snapshot.docs.map(collectIdsAndDocs);
       this.setState({ computers });
     });
-    firestore.collection('rows').orderBy('displayOrder').onSnapshot(snapshot => {
+    firestore.collection('rows').orderBy('displayOrder').onSnapshot((snapshot) => {
       const rows = snapshot.docs.map(collectIdsAndDocs);
       this.setState({ rows });
     });
   }
 
-  handleChange = event => {
+  handleChange = (event) => {
     const { name, value } = event.target;
+    const { computers } = this.state;
     const firebaseid = event.target.getAttribute('firebaseid');
-    let computers = [...this.state.computers];
+    // const computers = [...this.state.computers];
     const index = computers.findIndex(el => el.id === firebaseid);
-    computers[index][name] = value
+    computers[index][name] = value;
     const postRef = firestore.doc(`computers/${firebaseid}`);
     postRef.update({ [name]: value });
   }
 
   render() {
-    const { computers, rows } = this.state
+    const { computers, rows } = this.state;
 
     return (
       <main>
@@ -87,44 +82,42 @@ class App extends Component {
         </section> */}
         <hr />
         <h4>Edit Title</h4>
-        <button onClick={() => addItem('computers')}>New Record</button>
+        <button type="button" onClick={() => addItem('computers')}>New Record</button>
         <section>
-        <Row items={computers} property='id' disabled/>
-        <Row items={computers} property='displayOrder' disabled/>
-        { rows.map(row => (
-          <Fragment key={row.id}>
-            <Row
-              collection={'computers'}
-              items={computers}
-              property={ row.displayName }
-            />
-          </Fragment>
-        ))}
-        <div className="row">
-          <NewProperty rows={rows}/>
-          { computers.map(item => (
-            <Cell center key={item.id } item={item}>
-              <button onClick={() => removeItem('computers', item.id)}>delete</button>
-            </Cell>
+          <Row items={computers} property="id" disabled />
+          <Row items={computers} property="displayOrder" disabled />
+          { rows.map(row => (
+            <Fragment key={row.id}>
+              <Row
+                collection="computers"
+                items={computers}
+                property={row.displayName}
+              />
+            </Fragment>
           ))}
-        </div>
+          <div className="row">
+            <NewProperty rows={rows} />
+            { computers.map(item => (
+              <Cell center key={item.id} item={item}>
+                <button type="button" onClick={() => removeItem('computers', item.id)}>delete</button>
+              </Cell>
+            ))}
+          </div>
         </section>
         <hr />
-
         <h4>Rows</h4>
-        
         <section>
-        <Row items={rows} collection={'rows'} property='id' disabled/>
-        <Row items={rows} collection={'rows'} property='displayName'/>
-        <Row disabled items={rows} property='displayOrder'/>
-        <div className="row">
-          <Cell>Placeholder 2</Cell>
-          { rows.map(item => (
-              <Cell center key={item.id } item={item}>
-                <button onClick={() => removeItem('rows', item.id)}>delete</button>
+          <Row items={rows} collection="rows" property="id" disabled />
+          <Row items={rows} collection="rows" property="displayName" />
+          <Row disabled items={rows} property="displayOrder" />
+          <div className="row">
+            <Cell>Placeholder 2</Cell>
+            { rows.map(item => (
+              <Cell center key={item.id} item={item}>
+                <button type="button" onClick={() => removeItem('rows', item.id)}>delete</button>
               </Cell>
-          ))}
-        </div>
+            ))}
+          </div>
         </section>
         {/* <Row items={rows} property='displayName'/>
         <Row items={rows} property='id'/> */}
