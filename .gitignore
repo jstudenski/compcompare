@@ -4,8 +4,8 @@
 .pnp.js
 
 # firebase config
-src/config.json
-src/serviceAccountKey.json
+src/config/config.json
+src/config/serviceAccountKey.json
 
 # testing
 /coverage
